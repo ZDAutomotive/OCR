@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screen name="CAR">
+  <props>
+    <property name="CAR.SettingsAndServiceLabel.texts-0002">
+      <text lang="zh_CN" variant="Evo2plus" value="设置和服务" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Settings &amp;\nService" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="設定及服務" abbreviated="false" />
+    </property>
+    <property name="CAR.SettingsAndService_tiles.infolineDisabledTexts-0000">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统当前不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is currently unavailable." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="所選系統目前無法使用." abbreviated="false" />
+    </property>
+    <property name="CAR.SettingsAndService_tiles.infolineDisabledTexts-0001">
+      <text lang="zh_CN" variant="Evo2plus" value="打开点火开关, 配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Please turn on the ignition to configure the selected\nsystem." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="要設定已選取的系統, 請點火啟動." abbreviated="false" />
+    </property>
+    <property name="CAR.SettingsAndService_tiles.infolineDisabledTexts-0002">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统在当前车速下不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is not available at the current speed." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="目前速度無法使用所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.SettingsAndService_tiles.infolineDisabledTexts-0003">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在车辆静止时配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nvehicle is stationary." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="汽車靜止時, 才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.SettingsAndService_tiles.infolineDisabledTexts-0004">
+      <text lang="zh_CN" variant="Evo2plus" value="请启动发动机." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nengine is running." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="引擎運轉時才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.SettingsAndService_tiles.infolineDisabledTexts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在系统运行时可用" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is only available when the system is\nactivated." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="系統啟動時, 才能使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.SettingsAndService_tiles.infolineDisabledTexts-0006">
+      <text lang="zh_CN" variant="Evo2plus" value="所选设置在牵引拖车时不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is not possible when a trailer is\nhitched." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="被拖車拖著時, 無法使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.TitleName_TitleMidLabel.texts-0011">
+      <text lang="zh_CN" variant="Evo2plus" value="车辆" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Vehicle" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="車輛" abbreviated="false" />
+    </property>
+    <property name="CAR.carMonitor_Label.texts-0004">
+      <text lang="zh_CN" variant="Evo2plus" value="显示车辆" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Show vehicle" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="顯示車輛" abbreviated="false" />
+    </property>
+    <property name="CAR.carMonitor_tiles.infolineDisabledTexts-0002">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统当前不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is currently unavailable." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="所選系統目前無法使用." abbreviated="false" />
+    </property>
+    <property name="CAR.carMonitor_tiles.infolineDisabledTexts-0003">
+      <text lang="zh_CN" variant="Evo2plus" value="打开点火开关, 配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Please turn on the ignition to configure the selected\nsystem." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="要設定已選取的系統, 請點火啟動." abbreviated="false" />
+    </property>
+    <property name="CAR.carMonitor_tiles.infolineDisabledTexts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统在当前车速下不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is not available at the current speed." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="目前速度無法使用所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.carMonitor_tiles.infolineDisabledTexts-0006">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在车辆静止时配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nvehicle is stationary." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="汽車靜止時, 才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.carMonitor_tiles.infolineDisabledTexts-0007">
+      <text lang="zh_CN" variant="Evo2plus" value="请启动发动机." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nengine is running." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="引擎運轉時才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.carMonitor_tiles.infolineDisabledTexts-0008">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在系统运行时可用" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is only available when the system is\nactivated." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="系統啟動時, 才能使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.carMonitor_tiles.infolineDisabledTexts-0009">
+      <text lang="zh_CN" variant="Evo2plus" value="所选设置在牵引拖车时不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is not possible when a trailer is\nhitched." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="被拖車拖著時, 無法使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.climateLabel.texts-0002">
+      <text lang="zh_CN" variant="Evo2plus" value="空调" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Air conditioning" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="空調" abbreviated="false" />
+    </property>
+    <property name="CAR.climate_tiles.infolineDisabledTexts-0000">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统当前不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is currently unavailable." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="所選系統目前無法使用." abbreviated="false" />
+    </property>
+    <property name="CAR.climate_tiles.infolineDisabledTexts-0001">
+      <text lang="zh_CN" variant="Evo2plus" value="打开点火开关, 配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Please turn on the ignition to configure the selected\nsystem." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="要設定已選取的系統, 請點火啟動." abbreviated="false" />
+    </property>
+    <property name="CAR.climate_tiles.infolineDisabledTexts-0002">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统在当前车速下不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is not available at the current speed." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="目前速度無法使用所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.climate_tiles.infolineDisabledTexts-0003">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在车辆静止时配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nvehicle is stationary." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="汽車靜止時, 才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.climate_tiles.infolineDisabledTexts-0004">
+      <text lang="zh_CN" variant="Evo2plus" value="请启动发动机." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nengine is running." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="引擎運轉時才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.climate_tiles.infolineDisabledTexts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在系统运行时可用" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is only available when the system is\nactivated." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="系統啟動時, 才能使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.climate_tiles.infolineDisabledTexts-0006">
+      <text lang="zh_CN" variant="Evo2plus" value="所选设置在牵引拖车时不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is not possible when a trailer is\nhitched." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="被拖車拖著時, 無法使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.displayLabel.texts-0001">
+      <text lang="zh_CN" variant="Evo2plus" value="显示和亮度" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Display &amp;\nBrightness" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="顯示器及亮度" abbreviated="false" />
+    </property>
+    <property name="CAR.display_tiles.infolineDisabledTexts-0000">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统当前不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is currently unavailable." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="所選系統目前無法使用." abbreviated="false" />
+    </property>
+    <property name="CAR.display_tiles.infolineDisabledTexts-0001">
+      <text lang="zh_CN" variant="Evo2plus" value="打开点火开关, 配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Please turn on the ignition to configure the selected\nsystem." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="要設定已選取的系統, 請點火啟動." abbreviated="false" />
+    </property>
+    <property name="CAR.display_tiles.infolineDisabledTexts-0002">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统在当前车速下不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is not available at the current speed." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="目前速度無法使用所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.display_tiles.infolineDisabledTexts-0003">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在车辆静止时配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nvehicle is stationary." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="汽車靜止時, 才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.display_tiles.infolineDisabledTexts-0004">
+      <text lang="zh_CN" variant="Evo2plus" value="请启动发动机." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nengine is running." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="引擎運轉時才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.display_tiles.infolineDisabledTexts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在系统运行时可用" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is only available when the system is\nactivated." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="系統啟動時, 才能使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.display_tiles.infolineDisabledTexts-0006">
+      <text lang="zh_CN" variant="Evo2plus" value="所选设置在牵引拖车时不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is not possible when a trailer is\nhitched." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="被拖車拖著時, 無法使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.driveSelect_Label.texts-0002">
+      <text lang="zh_CN" variant="Evo2plus" value="Audi\n驾驶模式选择" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Audi drive\nselect" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="駕駛模式選擇" abbreviated="false" />
+    </property>
+    <property name="CAR.driveSelect_tiles.infolineDisabledTexts-0002">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统当前不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is currently unavailable." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="所選系統目前無法使用." abbreviated="false" />
+    </property>
+    <property name="CAR.driveSelect_tiles.infolineDisabledTexts-0003">
+      <text lang="zh_CN" variant="Evo2plus" value="打开点火开关, 配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Please turn on the ignition to configure the selected\nsystem." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="要設定已選取的系統, 請點火啟動." abbreviated="false" />
+    </property>
+    <property name="CAR.driveSelect_tiles.infolineDisabledTexts-0004">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统在当前车速下不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is not available at the current speed." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="目前速度無法使用所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.driveSelect_tiles.infolineDisabledTexts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在车辆静止时配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nvehicle is stationary." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="汽車靜止時, 才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.driveSelect_tiles.infolineDisabledTexts-0006">
+      <text lang="zh_CN" variant="Evo2plus" value="请启动发动机." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nengine is running." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="引擎運轉時才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.driveSelect_tiles.infolineDisabledTexts-0007">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在系统运行时可用" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is only available when the system is\nactivated." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="系統啟動時, 才能使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.driveSelect_tiles.infolineDisabledTexts-0008">
+      <text lang="zh_CN" variant="Evo2plus" value="所选设置在牵引拖车时不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is not possible when a trailer is\nhitched." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="被拖車拖著時, 無法使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.etc_tiles.infolineDisabledTexts-0000">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统当前不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is currently unavailable." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="所選系統目前無法使用." abbreviated="false" />
+    </property>
+    <property name="CAR.etc_tiles.infolineDisabledTexts-0001">
+      <text lang="zh_CN" variant="Evo2plus" value="打开点火开关, 配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Please turn on the ignition to configure the selected\nsystem." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="要設定已選取的系統, 請點火啟動." abbreviated="false" />
+    </property>
+    <property name="CAR.etc_tiles.infolineDisabledTexts-0002">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统在当前车速下不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is not available at the current speed." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="目前速度無法使用所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.etc_tiles.infolineDisabledTexts-0003">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在车辆静止时配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nvehicle is stationary." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="汽車靜止時, 才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.etc_tiles.infolineDisabledTexts-0004">
+      <text lang="zh_CN" variant="Evo2plus" value="请启动发动机." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nengine is running." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="引擎運轉時才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.etc_tiles.infolineDisabledTexts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在系统运行时可用" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is only available when the system is\nactivated." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="系統啟動時, 才能使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.etc_tiles.infolineDisabledTexts-0006">
+      <text lang="zh_CN" variant="Evo2plus" value="所选设置在牵引拖车时不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is not possible when a trailer is\nhitched." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="被拖車拖著時, 無法使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.etronLabel.texts-0001">
+      <text lang="zh_CN" variant="Evo2plus" value="电动模式" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="e-tron" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="e-tron" abbreviated="false" />
+    </property>
+    <property name="CAR.etron_tiles.infolineDisabledTexts-0002">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统当前不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is currently unavailable." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="所選系統目前無法使用." abbreviated="false" />
+    </property>
+    <property name="CAR.etron_tiles.infolineDisabledTexts-0003">
+      <text lang="zh_CN" variant="Evo2plus" value="打开点火开关, 配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Please turn on the ignition to configure the selected\nsystem." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="要設定已選取的系統, 請點火啟動." abbreviated="false" />
+    </property>
+    <property name="CAR.etron_tiles.infolineDisabledTexts-0004">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统在当前车速下不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is not available at the current speed." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="目前速度無法使用所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.etron_tiles.infolineDisabledTexts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在车辆静止时配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nvehicle is stationary." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="汽車靜止時, 才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.etron_tiles.infolineDisabledTexts-0006">
+      <text lang="zh_CN" variant="Evo2plus" value="请启动发动机." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nengine is running." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="引擎運轉時才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.etron_tiles.infolineDisabledTexts-0007">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在系统运行时可用" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is only available when the system is\nactivated." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="系統啟動時, 才能使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.etron_tiles.infolineDisabledTexts-0008">
+      <text lang="zh_CN" variant="Evo2plus" value="所选设置在牵引拖车时不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is not possible when a trailer is\nhitched." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="被拖車拖著時, 無法使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.fasLabel.texts-0001">
+      <text lang="zh_CN" variant="Evo2plus" value="驾驶员辅助系统" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Driver\nassistance" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="駕駛者輔助" abbreviated="false" />
+    </property>
+    <property name="CAR.fas_tiles.infolineDisabledTexts-0000">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统当前不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is currently unavailable." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="所選系統目前無法使用." abbreviated="false" />
+    </property>
+    <property name="CAR.fas_tiles.infolineDisabledTexts-0001">
+      <text lang="zh_CN" variant="Evo2plus" value="打开点火开关, 配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Please turn on the ignition to configure the selected\nsystem." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="要設定已選取的系統, 請點火啟動." abbreviated="false" />
+    </property>
+    <property name="CAR.fas_tiles.infolineDisabledTexts-0002">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统在当前车速下不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is not available at the current speed." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="目前速度無法使用所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.fas_tiles.infolineDisabledTexts-0003">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在车辆静止时配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nvehicle is stationary." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="汽車靜止時, 才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.fas_tiles.infolineDisabledTexts-0004">
+      <text lang="zh_CN" variant="Evo2plus" value="请启动发动机." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nengine is running." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="引擎運轉時才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.fas_tiles.infolineDisabledTexts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在系统运行时可用" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is only available when the system is\nactivated." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="系統啟動時, 才能使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.fas_tiles.infolineDisabledTexts-0006">
+      <text lang="zh_CN" variant="Evo2plus" value="所选设置在牵引拖车时不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is not possible when a trailer is\nhitched." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="被拖車拖著時, 無法使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.lightAndSightLabel.texts-0001">
+      <text lang="zh_CN" variant="Evo2plus" value="照明和可见性" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Light &amp; Visibility" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="照明及能見度" abbreviated="false" />
+    </property>
+    <property name="CAR.lightAndSight_tiles.infolineDisabledTexts-0000">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统当前不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is currently unavailable." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="所選系統目前無法使用." abbreviated="false" />
+    </property>
+    <property name="CAR.lightAndSight_tiles.infolineDisabledTexts-0001">
+      <text lang="zh_CN" variant="Evo2plus" value="打开点火开关, 配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Please turn on the ignition to configure the selected\nsystem." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="要設定已選取的系統, 請點火啟動." abbreviated="false" />
+    </property>
+    <property name="CAR.lightAndSight_tiles.infolineDisabledTexts-0002">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统在当前车速下不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is not available at the current speed." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="目前速度無法使用所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.lightAndSight_tiles.infolineDisabledTexts-0003">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在车辆静止时配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nvehicle is stationary." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="汽車靜止時, 才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.lightAndSight_tiles.infolineDisabledTexts-0004">
+      <text lang="zh_CN" variant="Evo2plus" value="请启动发动机." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nengine is running." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="引擎運轉時才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.lightAndSight_tiles.infolineDisabledTexts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在系统运行时可用" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is only available when the system is\nactivated." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="系統啟動時, 才能使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.lightAndSight_tiles.infolineDisabledTexts-0006">
+      <text lang="zh_CN" variant="Evo2plus" value="所选设置在牵引拖车时不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is not possible when a trailer is\nhitched." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="被拖車拖著時, 無法使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.parkingLabel.texts-0001">
+      <text lang="zh_CN" variant="Evo2plus" value="停车辅助系统" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Parking aid" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="泊車輔助" abbreviated="false" />
+    </property>
+    <property name="CAR.parking_tiles.infolineDisabledTexts-0000">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统当前不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is currently unavailable." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="所選系統目前無法使用." abbreviated="false" />
+    </property>
+    <property name="CAR.parking_tiles.infolineDisabledTexts-0001">
+      <text lang="zh_CN" variant="Evo2plus" value="打开点火开关, 配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Please turn on the ignition to configure the selected\nsystem." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="要設定已選取的系統, 請點火啟動." abbreviated="false" />
+    </property>
+    <property name="CAR.parking_tiles.infolineDisabledTexts-0002">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统在当前车速下不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is not available at the current speed." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="目前速度無法使用所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.parking_tiles.infolineDisabledTexts-0003">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在车辆静止时配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nvehicle is stationary." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="汽車靜止時, 才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.parking_tiles.infolineDisabledTexts-0004">
+      <text lang="zh_CN" variant="Evo2plus" value="请启动发动机." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nengine is running." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="引擎運轉時才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.parking_tiles.infolineDisabledTexts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在系统运行时可用" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is only available when the system is\nactivated." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="系統啟動時, 才能使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.parking_tiles.infolineDisabledTexts-0006">
+      <text lang="zh_CN" variant="Evo2plus" value="所选设置在牵引拖车时不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is not possible when a trailer is\nhitched." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="被拖車拖著時, 無法使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.peaLabel.texts-0001">
+      <text lang="zh_CN" variant="Evo2plus" value="预测效率辅助" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Efficiency assist" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="節能輔助" abbreviated="false" />
+    </property>
+    <property name="CAR.pea_tiles.infolineDisabledTexts-0002">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统当前不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is currently unavailable." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="所選系統目前無法使用." abbreviated="false" />
+    </property>
+    <property name="CAR.pea_tiles.infolineDisabledTexts-0003">
+      <text lang="zh_CN" variant="Evo2plus" value="打开点火开关, 配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Please turn on the ignition to configure the selected\nsystem." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="要設定已選取的系統, 請點火啟動." abbreviated="false" />
+    </property>
+    <property name="CAR.pea_tiles.infolineDisabledTexts-0004">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统在当前车速下不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is not available at the current speed." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="目前速度無法使用所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.pea_tiles.infolineDisabledTexts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在车辆静止时配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nvehicle is stationary." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="汽車靜止時, 才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.pea_tiles.infolineDisabledTexts-0006">
+      <text lang="zh_CN" variant="Evo2plus" value="请启动发动机." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nengine is running." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="引擎運轉時才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.pea_tiles.infolineDisabledTexts-0007">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在系统运行时可用" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is only available when the system is\nactivated." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="系統啟動時, 才能使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.pea_tiles.infolineDisabledTexts-0008">
+      <text lang="zh_CN" variant="Evo2plus" value="所选设置在牵引拖车时不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is not possible when a trailer is\nhitched." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="被拖車拖著時, 無法使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.search_Label.texts-0003">
+      <text lang="zh_CN" variant="Evo2plus" value="搜索" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Search" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="搜尋" abbreviated="false" />
+    </property>
+    <property name="CAR.search_tiles.infolineDisabledTexts-0000">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统当前不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is currently unavailable." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="所選系統目前無法使用." abbreviated="false" />
+    </property>
+    <property name="CAR.search_tiles.infolineDisabledTexts-0001">
+      <text lang="zh_CN" variant="Evo2plus" value="打开点火开关, 配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Please turn on the ignition to configure the selected\nsystem." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="要設定已選取的系統, 請點火啟動." abbreviated="false" />
+    </property>
+    <property name="CAR.search_tiles.infolineDisabledTexts-0002">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统在当前车速下不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is not available at the current speed." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="目前速度無法使用所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.search_tiles.infolineDisabledTexts-0003">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在车辆静止时配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nvehicle is stationary." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="汽車靜止時, 才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.search_tiles.infolineDisabledTexts-0004">
+      <text lang="zh_CN" variant="Evo2plus" value="请启动发动机." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nengine is running." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="引擎運轉時才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.search_tiles.infolineDisabledTexts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在系统运行时可用" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is only available when the system is\nactivated." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="系統啟動時, 才能使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.search_tiles.infolineDisabledTexts-0006">
+      <text lang="zh_CN" variant="Evo2plus" value="所选设置在牵引拖车时不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is not possible when a trailer is\nhitched." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="被拖車拖著時, 無法使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.seatLabel.texts-0001">
+      <text lang="zh_CN" variant="Evo2plus" value="座椅" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Seats" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="座位" abbreviated="false" />
+    </property>
+    <property name="CAR.seat_tiles.infolineDisabledTexts-0002">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统当前不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is currently unavailable." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="所選系統目前無法使用." abbreviated="false" />
+    </property>
+    <property name="CAR.seat_tiles.infolineDisabledTexts-0003">
+      <text lang="zh_CN" variant="Evo2plus" value="打开点火开关, 配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Please turn on the ignition to configure the selected\nsystem." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="要設定已選取的系統, 請點火啟動." abbreviated="false" />
+    </property>
+    <property name="CAR.seat_tiles.infolineDisabledTexts-0004">
+      <text lang="zh_CN" variant="Evo2plus" value="所选系统在当前车速下不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system is not available at the current speed." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="目前速度無法使用所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.seat_tiles.infolineDisabledTexts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在车辆静止时配置所选系统." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nvehicle is stationary." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="汽車靜止時, 才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.seat_tiles.infolineDisabledTexts-0006">
+      <text lang="zh_CN" variant="Evo2plus" value="请启动发动机." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected system can only be configured when the\nengine is running." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="引擎運轉時才可以設定所選系統." abbreviated="false" />
+    </property>
+    <property name="CAR.seat_tiles.infolineDisabledTexts-0007">
+      <text lang="zh_CN" variant="Evo2plus" value="仅在系统运行时可用" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is only available when the system is\nactivated." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="系統啟動時, 才能使用已選取的設定." abbreviated="false" />
+    </property>
+    <property name="CAR.seat_tiles.infolineDisabledTexts-0008">
+      <text lang="zh_CN" variant="Evo2plus" value="所选设置在牵引拖车时不可用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="The selected setting is not possible when a trailer is\nhitched." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="被拖車拖著時, 無法使用已選取的設定." abbreviated="false" />
+    </property>
+  </props>
+</screen>

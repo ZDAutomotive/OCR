@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screen name="CAR_SETTINGS_SERVICE_SIA">
+  <props>
+    <property name="CAR_SETTINGS_SERVICE_SIA.Reset.texts-0021">
+      <text lang="zh_CN" variant="Evo2plus" value="复位机油更换周期" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Reset oil change interval" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="重設更換機油時間" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_SIA.Slash_Inspection.texts-0022">
+      <text lang="zh_CN" variant="Evo2plus" value="/" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="/" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="/" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_SIA.Slash_OilChange.texts-0022">
+      <text lang="zh_CN" variant="Evo2plus" value="/" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="/" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="/" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_SIA.Time_Inspection.texts-0021">
+      <text lang="zh_CN" variant="Evo2plus" value="%1 日" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="%1 day" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="%1 日" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_SIA.Time_Inspection.texts-0022">
+      <text lang="zh_CN" variant="Evo2plus" value="%1 日" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="%1 days" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="%1 日" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_SIA.Time_Inspection.texts-0023">
+      <text lang="zh_CN" variant="Evo2plus" value="----" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="----" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="----" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_SIA.Time_OilChange.texts-0022">
+      <text lang="zh_CN" variant="Evo2plus" value="%1 日" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="%1 day" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="%1 日" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_SIA.Time_OilChange.texts-0023">
+      <text lang="zh_CN" variant="Evo2plus" value="%1 日" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="%1 days" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="%1 日" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_SIA.Time_OilChange.texts-0024">
+      <text lang="zh_CN" variant="Evo2plus" value="----" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="----" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="----" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_SIA.TitleDomain_TitleMidLabel.texts-0012">
+      <text lang="zh_CN" variant="Evo2plus" value="车辆" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Vehicle" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="車輛" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_SIA.TitleName_TitleMidLabelContent.texts-0013">
+      <text lang="zh_CN" variant="Evo2plus" value="保养周期" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Service intervals" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="保養週期" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_SIA.infoLabel_NextService.texts-0019">
+      <text lang="zh_CN" variant="Evo2plus" value="下次检查到期日" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Next inspection in" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="距離下次保養檢查時間還有" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_SIA.infoLabel_NextService.texts-0020">
+      <text lang="zh_CN" variant="Evo2plus" value="检查到期自" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Inspection has been due for" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="保養檢查已逾期" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_SIA.infoLabel_OilChange.texts-0018">
+      <text lang="zh_CN" variant="Evo2plus" value="下次机油更换到期日" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Next oil change in" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="距離下次更換機油的時間還有" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_SIA.infoLabel_OilChange.texts-0019">
+      <text lang="zh_CN" variant="Evo2plus" value="机油更换到期自" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Oil change has been due for" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="更換機油時間已逾期" abbreviated="false" />
+    </property>
+  </props>
+</screen>

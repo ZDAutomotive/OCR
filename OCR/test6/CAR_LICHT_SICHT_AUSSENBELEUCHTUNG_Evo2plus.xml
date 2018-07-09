@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screen name="CAR_LICHT_SICHT_AUSSENBELEUCHTUNG">
+  <props>
+    <property name="CAR_LICHT_SICHT_AUSSENBELEUCHTUNG.Automatisches_Fahrlicht_label.texts-0015">
+      <text lang="zh_CN" variant="Evo2plus" value="自动大灯" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Automatic headlights" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="自動式車前燈" abbreviated="false" />
+    </property>
+    <property name="CAR_LICHT_SICHT_AUSSENBELEUCHTUNG.EinAussteigelicht.texts-0000">
+      <text lang="zh_CN" variant="Evo2plus" value="登车/离车照明" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Entry/exit lighting" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="上車/落車燈" abbreviated="false" />
+    </property>
+    <property name="CAR_LICHT_SICHT_AUSSENBELEUCHTUNG.LichtfürLinksverkehr.texts-0000">
+      <text lang="zh_CN" variant="Evo2plus" value="靠左行驶照明" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Lights for driving on left" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="左側駕駛車燈" abbreviated="false" />
+    </property>
+    <property name="CAR_LICHT_SICHT_AUSSENBELEUCHTUNG.LichtfürRechtsverkehr.texts-0000">
+      <text lang="zh_CN" variant="Evo2plus" value="靠右行驶照明" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Lights for driving on left" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="右側駕駛車燈" abbreviated="false" />
+    </property>
+    <property name="CAR_LICHT_SICHT_AUSSENBELEUCHTUNG.Tagfahrlicht.texts-0000">
+      <text lang="zh_CN" variant="Evo2plus" value="日间行车灯" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Daytime running lights" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="日間行車燈" abbreviated="false" />
+    </property>
+    <property name="CAR_LICHT_SICHT_AUSSENBELEUCHTUNG.TitleDomain_TitleMidLabel.texts-0010">
+      <text lang="zh_CN" variant="Evo2plus" value="车辆" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Vehicle" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="車輛" abbreviated="false" />
+    </property>
+    <property name="CAR_LICHT_SICHT_AUSSENBELEUCHTUNG.TitleName_TitleMidLabelContent.texts-0011">
+      <text lang="zh_CN" variant="Evo2plus" value="外部照明" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Ext. lighting" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="外部照明" abbreviated="false" />
+    </property>
+  </props>
+</screen>

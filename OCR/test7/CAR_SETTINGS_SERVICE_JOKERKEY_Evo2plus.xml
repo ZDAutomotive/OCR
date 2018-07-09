@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screen name="CAR_SETTINGS_SERVICE_JOKERKEY">
+  <props>
+    <property name="CAR_SETTINGS_SERVICE_JOKERKEY.Label.texts-0025">
+      <text lang="zh_CN" variant="Evo2plus" value="呼叫中心" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Call center" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="服務中心" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_JOKERKEY.Label.texts-0026">
+      <text lang="zh_CN" variant="Evo2plus" value="语音导航打开/关闭" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Voice guidance on/off" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="語音導航開啟/關閉" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_JOKERKEY.Label.texts-0027">
+      <text lang="zh_CN" variant="Evo2plus" value="日间/夜间地图" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Day/night map" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="日/夜地圖" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_JOKERKEY.Label.texts-0028">
+      <text lang="zh_CN" variant="Evo2plus" value="交通广播打开/关闭" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Turn traffic reports on/off" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="顯示/隱藏交通報導" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_JOKERKEY.Label.texts-0029">
+      <text lang="zh_CN" variant="Evo2plus" value="交通节目打开/关闭" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Turn traffic program on/off" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="顯示/隱藏交通程式" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_JOKERKEY.Label.texts-0030">
+      <text lang="zh_CN" variant="Evo2plus" value="仪表盘: 交通标志识别打开/关闭" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Instrument cluster: traffic sign recognition on/off" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="儀錶板: 交通標誌辨識開/關" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_JOKERKEY.Label.texts-0031">
+      <text lang="zh_CN" variant="Evo2plus" value="切换到收音机/媒体" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Switch to radio/media" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="切換至收音機/媒體" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_JOKERKEY.Label.texts-0032">
+      <text lang="zh_CN" variant="Evo2plus" value="当前的语音导航" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Current voice guidance" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="現在的語音導航" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_JOKERKEY.Label.texts-0033">
+      <text lang="zh_CN" variant="Evo2plus" value="摄像头视图: 前部拐角" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Camera view: front corner" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="鏡頭視野: 前方街角" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_JOKERKEY.Label.texts-0034">
+      <text lang="zh_CN" variant="Evo2plus" value="摄像头视图: 前部轮胎" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Camera view: front tires" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="鏡頭視野: 前輪" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_JOKERKEY.Label.texts-0035">
+      <text lang="zh_CN" variant="Evo2plus" value="方向盘加热打开/关闭" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Turn steering wheel heating on/off" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="開/關軚盤加熱" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_JOKERKEY.Label.texts-0036">
+      <text lang="zh_CN" variant="Evo2plus" value="辅助加热" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Auxiliary heating" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="輔助暖氣" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_JOKERKEY.TitleDomain_TitleMidLabel.texts-0012">
+      <text lang="zh_CN" variant="Evo2plus" value="车辆" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Vehicle" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="車輛" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_JOKERKEY.TitleMidLabelContent_Popup.texts-0023">
+      <text lang="zh_CN" variant="Evo2plus" value="方向盘按钮设置" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Steer. wheel button assgnmt." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="軚盤按鈕任務" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_JOKERKEY.TitleName_TitleMidLabelContent.texts-0014">
+      <text lang="zh_CN" variant="Evo2plus" value="方向盘按钮设置" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Steering wheel button" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="軚盤按鈕任務" abbreviated="false" />
+    </property>
+  </props>
+</screen>

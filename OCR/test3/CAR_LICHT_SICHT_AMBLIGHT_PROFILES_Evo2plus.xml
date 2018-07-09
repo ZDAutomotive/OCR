@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screen name="CAR_LICHT_SICHT_AMBLIGHT_PROFILES">
+  <props>
+    <property name="CAR_LICHT_SICHT_AMBLIGHT_PROFILES.Brightness_maxLabel_LC.texts-0002">
+      <text lang="zh_CN" variant="Evo2plus" value="亮" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Brighter" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="較光" abbreviated="false" />
+    </property>
+    <property name="CAR_LICHT_SICHT_AMBLIGHT_PROFILES.Brightness_minLabel_LC.texts-0003">
+      <text lang="zh_CN" variant="Evo2plus" value="关闭" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Off" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="關" abbreviated="false" />
+    </property>
+    <property name="CAR_LICHT_SICHT_AMBLIGHT_PROFILES.Label.texts-0000">
+      <text lang="zh_CN" variant="Evo2plus" value="驾驶模式选择" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Drive select" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="駕駛模式選擇" abbreviated="false" />
+    </property>
+    <property name="CAR_LICHT_SICHT_AMBLIGHT_PROFILES.Label.texts-0001">
+      <text lang="zh_CN" variant="Evo2plus" value="轮廓" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Contour" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="輪廓 (白色)" abbreviated="false" />
+    </property>
+    <property name="CAR_LICHT_SICHT_AMBLIGHT_PROFILES.Label.texts-0002">
+      <text lang="zh_CN" variant="Evo2plus" value="沿海风格(蓝色)" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Maritime" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="海洋 (藍色)" abbreviated="false" />
+    </property>
+    <property name="CAR_LICHT_SICHT_AMBLIGHT_PROFILES.Label.texts-0003">
+      <text lang="zh_CN" variant="Evo2plus" value="日光风格(橙色)" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Solar" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="太陽 (橙色)" abbreviated="false" />
+    </property>
+    <property name="CAR_LICHT_SICHT_AMBLIGHT_PROFILES.Label.texts-0004">
+      <text lang="zh_CN" variant="Evo2plus" value="激情风格(红色)" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Impulse" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="慾望 (紅色)" abbreviated="false" />
+    </property>
+    <property name="CAR_LICHT_SICHT_AMBLIGHT_PROFILES.Label.texts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="幻想风格(白色)" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Vision" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="視野 (白色)" abbreviated="false" />
+    </property>
+    <property name="CAR_LICHT_SICHT_AMBLIGHT_PROFILES.Label.texts-0006">
+      <text lang="zh_CN" variant="Evo2plus" value="加勒比风格" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Caribbean" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="加勒比" abbreviated="false" />
+    </property>
+    <property name="CAR_LICHT_SICHT_AMBLIGHT_PROFILES.Label.texts-0015">
+      <text lang="zh_CN" variant="Evo2plus" value="个性化" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Individual" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="個性化" abbreviated="false" />
+    </property>
+    <property name="CAR_LICHT_SICHT_AMBLIGHT_PROFILES.Slider_Label_LC.texts-0000">
+      <text lang="zh_CN" variant="Evo2plus" value="亮度" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Brightness" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="亮度" abbreviated="false" />
+    </property>
+    <property name="CAR_LICHT_SICHT_AMBLIGHT_PROFILES.TitleDomain_TitleMidLabel.texts-0010">
+      <text lang="zh_CN" variant="Evo2plus" value="车辆" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Vehicle" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="車輛" abbreviated="false" />
+    </property>
+    <property name="CAR_LICHT_SICHT_AMBLIGHT_PROFILES.TitleName_TitleMidLabelContent.texts-0020">
+      <text lang="zh_CN" variant="Evo2plus" value="内部照明" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Interior lighting" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="內部照明" abbreviated="false" />
+    </property>
+  </props>
+</screen>

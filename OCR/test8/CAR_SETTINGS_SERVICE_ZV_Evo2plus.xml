@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screen name="CAR_SETTINGS_SERVICE_ZV">
+  <props>
+    <property name="CAR_SETTINGS_SERVICE_ZV.DoorLock_TitleLabel.texts-0006">
+      <text lang="zh_CN" variant="Evo2plus" value="车门解锁" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Door unlocking" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="正在解鎖車門" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_ZV.TitleDomain_TitleMidLabel.texts-0010">
+      <text lang="zh_CN" variant="Evo2plus" value="车辆" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Vehicle" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="車輛" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_ZV.TitleName_TitleMidLabelContent.texts-0011">
+      <text lang="zh_CN" variant="Evo2plus" value="中央门锁" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Central locking" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="中央鎖" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_ZV.ToggleButton_DoorLock_loudLabel.texts-0006">
+      <text lang="zh_CN" variant="Evo2plus" value="驾驶侧车门" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Driver's door" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="駕駛者車門" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_ZV.ToggleButton_DoorLock_midLabel.texts-0006">
+      <text lang="zh_CN" variant="Evo2plus" value="全部" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="All" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="全部" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_ZV.cls_Beep.texts-0004">
+      <text lang="zh_CN" variant="Evo2plus" value="锁车时鸣声提示" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Tone when locking" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="上鎖提示聲響" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_ZV.cls_Lock.texts-0009">
+      <text lang="zh_CN" variant="Evo2plus" value="行驶时自动上锁" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Lock when driving" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="駕駛時鎖定" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_ZV.cls_LockRear.texts-0010">
+      <text lang="zh_CN" variant="Evo2plus" value="禁用行李箱盖手柄" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Disable rear lid handle" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="尾門手柄禁用" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_ZV.cls_Longpush.texts-0000">
+      <text lang="zh_CN" variant="Evo2plus" value="长按以打开车窗" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Long press to open windows" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="長按以打開車窗" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_ZV.doorKeyless.texts-0010">
+      <text lang="zh_CN" variant="Evo2plus" value="用便捷钥匙开启" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Open with convenience key" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="以便利鑰匙開啟" abbreviated="false" />
+    </property>
+    <property name="CAR_SETTINGS_SERVICE_ZV.mirror.texts-0003">
+      <text lang="zh_CN" variant="Evo2plus" value="收起后视镜" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Fold mirrors" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="摺疊倒後鏡" abbreviated="false" />
+    </property>
+  </props>
+</screen>

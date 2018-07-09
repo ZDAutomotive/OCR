@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screen name="CAR_FAS_SETTINGS_NV">
+  <props>
+    <property name="CAR_FAS_SETTINGS_NV.FAS_Nightvision_Label.texts-0010">
+      <text lang="zh_CN" variant="Evo2plus" value="对比" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Contrast" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="對比" abbreviated="false" />
+    </property>
+    <property name="CAR_FAS_SETTINGS_NV.FAS_Nightvision_maxLabel.texts-0002">
+      <text lang="zh_CN" variant="Evo2plus" value="最大" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Max" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="最大" abbreviated="false" />
+    </property>
+    <property name="CAR_FAS_SETTINGS_NV.FAS_Nightvision_minLabel.texts-0002">
+      <text lang="zh_CN" variant="Evo2plus" value="最小" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Min" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="最小" abbreviated="false" />
+    </property>
+    <property name="CAR_FAS_SETTINGS_NV.Label.texts-0000">
+      <text lang="zh_CN" variant="Evo2plus" value="夜视辅助信息" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Night vision assist information" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="夜視輔助資訊" abbreviated="false" />
+    </property>
+    <property name="CAR_FAS_SETTINGS_NV.TitleDomain_TitleMidLabel.texts-0010">
+      <text lang="zh_CN" variant="Evo2plus" value="车辆" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Vehicle" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="車輛" abbreviated="false" />
+    </property>
+    <property name="CAR_FAS_SETTINGS_NV.TitleMidLabelContent_P.texts-0022">
+      <text lang="zh_CN" variant="Evo2plus" value="夜视辅助系统" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Night vision assist" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="夜視輔助" abbreviated="false" />
+    </property>
+    <property name="CAR_FAS_SETTINGS_NV.TitleName_TitleMidLabelContent.texts-0011">
+      <text lang="zh_CN" variant="Evo2plus" value="夜视辅助系统" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Night vision assist" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="夜視輔助" abbreviated="false" />
+    </property>
+  </props>
+</screen>

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screen name="CAR_DRIVE_SELECT_INDIVIDUAL">
+  <props>
+    <property name="CAR_DRIVE_SELECT_INDIVIDUAL.AktivesFahrwerk_TitleLabel.texts-0006">
+      <text lang="zh_CN" variant="Evo2plus" value="悬挂" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Suspension" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="懸吊系統" abbreviated="false" />
+    </property>
+    <property name="CAR_DRIVE_SELECT_INDIVIDUAL.Antrieb_TitleLabel.texts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="驾驶" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Drive" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="駕駛" abbreviated="false" />
+    </property>
+    <property name="CAR_DRIVE_SELECT_INDIVIDUAL.Lenkung_TitleLabel.texts-0007">
+      <text lang="zh_CN" variant="Evo2plus" value="转向" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Steering" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="方向" abbreviated="false" />
+    </property>
+    <property name="CAR_DRIVE_SELECT_INDIVIDUAL.Motorsound_TitleLabel.texts-0008">
+      <text lang="zh_CN" variant="Evo2plus" value="发动机声音" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Engine sound" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="引擎聲音" abbreviated="false" />
+    </property>
+    <property name="CAR_DRIVE_SELECT_INDIVIDUAL.TitleDomain_TitleMidLabel.texts-0018">
+      <text lang="zh_CN" variant="Evo2plus" value="车辆" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Vehicle" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="車輛" abbreviated="false" />
+    </property>
+    <property name="CAR_DRIVE_SELECT_INDIVIDUAL.TitleMidLabelContent_P2.texts-0019">
+      <text lang="zh_CN" variant="Evo2plus" value="Audi 驾驶模式选择" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Audi drive select" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="Audi 駕駛模式選擇" abbreviated="false" />
+    </property>
+    <property name="CAR_DRIVE_SELECT_INDIVIDUAL.TitleName_TitleMidLabelContent.texts-0019">
+      <text lang="zh_CN" variant="Evo2plus" value="个性化设置" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Set individual" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="個別" abbreviated="false" />
+    </property>
+    <property name="CAR_DRIVE_SELECT_INDIVIDUAL.ToggleButton_AktivesFahrwerk_efficiencyLabel.texts-0004">
+      <text lang="zh_CN" variant="Evo2plus" value="舒适" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Comfortable" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="舒適" abbreviated="false" />
+    </property>
+    <property name="CAR_DRIVE_SELECT_INDIVIDUAL.ToggleButton_AktivesFahrwerk_loudLabel.texts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="运动" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Sport" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="體育" abbreviated="false" />
+    </property>
+    <property name="CAR_DRIVE_SELECT_INDIVIDUAL.ToggleButton_AktivesFahrwerk_midLabel.texts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="ausgewogen" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Balanced" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="ausgewogen" abbreviated="false" />
+    </property>
+    <property name="CAR_DRIVE_SELECT_INDIVIDUAL.ToggleButton_Antrieb_efficiencyLabel.texts-0004">
+      <text lang="zh_CN" variant="Evo2plus" value="经济" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Efficiency" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="效能" abbreviated="false" />
+    </property>
+    <property name="CAR_DRIVE_SELECT_INDIVIDUAL.ToggleButton_Antrieb_loudLabel.texts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="运动" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Sport" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="體育" abbreviated="false" />
+    </property>
+    <property name="CAR_DRIVE_SELECT_INDIVIDUAL.ToggleButton_Antrieb_midLabel.texts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="平衡" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Balanced" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="平衡" abbreviated="false" />
+    </property>
+    <property name="CAR_DRIVE_SELECT_INDIVIDUAL.ToggleButton_Lenkung_efficiencyLabel.texts-0004">
+      <text lang="zh_CN" variant="Evo2plus" value="komfortabel" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Comfortable" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="komfortabel" abbreviated="false" />
+    </property>
+    <property name="CAR_DRIVE_SELECT_INDIVIDUAL.ToggleButton_Lenkung_loudLabel.texts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="运动" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Sport" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="體育" abbreviated="false" />
+    </property>
+    <property name="CAR_DRIVE_SELECT_INDIVIDUAL.ToggleButton_Lenkung_midLabel.texts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="ausgewogen" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Balanced" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="ausgewogen" abbreviated="false" />
+    </property>
+    <property name="CAR_DRIVE_SELECT_INDIVIDUAL.ToggleButton_Motorsound_efficiencyLabel.texts-0004">
+      <text lang="zh_CN" variant="Evo2plus" value="安静" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Quiet" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="寧靜" abbreviated="false" />
+    </property>
+    <property name="CAR_DRIVE_SELECT_INDIVIDUAL.ToggleButton_Motorsound_loudLabel.texts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="当前" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Present" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="現在" abbreviated="false" />
+    </property>
+    <property name="CAR_DRIVE_SELECT_INDIVIDUAL.ToggleButton_Motorsound_midLabel.texts-0005">
+      <text lang="zh_CN" variant="Evo2plus" value="自动" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Automatic" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="自動" abbreviated="false" />
+    </property>
+  </props>
+</screen>

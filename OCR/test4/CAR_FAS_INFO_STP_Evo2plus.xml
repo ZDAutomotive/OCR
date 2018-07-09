@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screen name="CAR_FAS_INFO_STP">
+  <props>
+    <property name="CAR_FAS_INFO_STP.InstructionText_STP_Label.texts-0000">
+      <text lang="zh_CN" variant="Evo2plus" value="在系统范围内,\n当高速公路或类似高速路的道路上发生拥堵且车辆以低于\n60 km/h 的车速行驶时, Audi AI 交通拥堵导航功能\n将可以接管车辆操控. 当系统处于可用状态时, 您可以通过按压 Audi AI\n按钮并松开踏板和方向盘启用系统. 一旦您重新介入车辆操控,\n系统将立即停用." abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Within the limits of the system, the Audi AI traffic pilot takes\nover the vehicle guidance in traffic jams up to 60 km/h on\nhighways and streets similar to highways. If the system is\navailable, you can activate it by pressing the Audi AI button and\nreleasing the pedals and steering wheel. The system is\ndeactivated as soon as you resume control of the vehicle." abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="在系統的限制範圍內, 當高速公路及類似高速公路的道路擠塞至 60\nkm/h, Audi AI 交通擠塞導航便會導引車輛. 如系統為可用狀態,\n你可以按 Audi AI 按鈕並放開踏板及軚盤. 當你重新駕駛車輛時,\n系統就會關掉." abbreviated="false" />
+    </property>
+    <property name="CAR_FAS_INFO_STP.TitleDomain_TitleMidLabel.texts-0021">
+      <text lang="zh_CN" variant="Evo2plus" value="车辆" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Vehicle" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="車輛" abbreviated="false" />
+    </property>
+    <property name="CAR_FAS_INFO_STP.TitleMidLabelContent_P.texts-0022">
+      <text lang="zh_CN" variant="Evo2plus" value="交通拥堵导航" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Audi AI traffic pilot" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="交通擠塞導航" abbreviated="false" />
+    </property>
+    <property name="CAR_FAS_INFO_STP.TitleName_TitleMidLabelContent.texts-0022">
+      <text lang="zh_CN" variant="Evo2plus" value="交通拥堵导航" abbreviated="false" />
+      <text lang="en_CN" variant="Evo2plus" value="Staupilot" abbreviated="false" />
+      <text lang="zh_HK" variant="Evo2plus" value="交通擠塞導航" abbreviated="false" />
+    </property>
+  </props>
+</screen>
