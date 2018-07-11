@@ -11,6 +11,13 @@ from skimage.measure import compare_ssim as ssim
 import tesserocr
 import time
 import xml.etree.ElementTree as ET
+import argparse
+
+
+parser = argparse.ArgumentParser(description='Create a ArcHydro schema')
+parser.add_argument('--path', metavar='path', required=True,
+                        help='path to schema')
+args = parser.parse_args()
 
 
 def load_screenshots(img_path, images):
@@ -36,14 +43,17 @@ def image_processing(imageA, img0, lang, csv_file):
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (21, 20))
     eroded = cv2.erode(binary2, kernel, iterations=1)
     erodedBi = cv2.bitwise_not(eroded)
+    cv2.imwrite('outputnot0.png', erodedBi)
     iimg, contours2, hierarchy2 = cv2.findContours(erodedBi, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-
     # find head area for OCR text with color
     headArea = img[104:204, 319:1493]
     erodedHead = cv2.erode(headArea, kernel, iterations=1)
     erodedHead = cv2.bitwise_not(erodedHead)
+    cv2.imwrite('outputnot.png', erodedHead)
     iimg, contours, hierarchy = cv2.findContours(erodedHead, cv2.RETR_EXTERNAL,
                                            cv2.CHAIN_APPROX_SIMPLE)
+    global midTime
+    midTime = time.clock()
 
     for i in range(len(contours)):
         x, y, w, h = cv2.boundingRect(contours[i])
@@ -60,14 +70,16 @@ def image_processing(imageA, img0, lang, csv_file):
                 count, x, y, w, h, text.encode('utf-8')))
 
     for j in range(len(contours2)):
+        # print(len(contours2))
         cnt2 = contours2[j]
         x2, y2, w2, h2 = cv2.boundingRect(cnt2)
+        # print(str(x2) + '...' + str(y2) + '...' + str(w2) + '...' + str(h2))
         if x2 > 120 and y2 > 20 and 2 < w2 and 2 < h2 < 450:
             count += 1
             cv2.rectangle(img0, (x2, y2), (x2 + w2, y2 + h2), (0, 255, 0), 2)
             crop_img = img[y2:y2 + h2, x2:x2 + w2]
             cv2.imwrite('ref.png', crop_img)
-            text = tesserocr.image_to_text(Image.open('ref.png'), lang)
+            text = tesserocr.image_to_text(Image.open('ref.png').convert('L'), lang, psm=8)
             text = text.replace(" ", "")
             # print text
             csv_file.write('{}:,{},{},{},{},{}\n'.format(
@@ -354,9 +366,9 @@ def compare_difference2(target_value_file, actual_value_file):
             # print 'wrong:' + str(total2 - countCorrect2)
 
 
-def main():
-    start = time.clock()
-    file_path_head = "test3/"
+def main(path=args.path):
+    start = time.clock()             
+    file_path_head = path + '/'
     # file_path_head = sys.argv[1]
     img_path = "%s%s" % (file_path_head, '*.png')
     images = []
@@ -379,14 +391,14 @@ def main():
     # xml_file = 'T3/CAR_LICHT_SICHT_AMBLIGHT_PROFILES_Evo2plus.xml'
     # xml_file = 'T4/CAR_SETTINGS_SERVICE_JOKERKEY_Evo2plus.xml'
     # xml_file = 'T5/CAR_SETTINGS_SERVICE_ZV_Evo2plus.xml'
-    target_value_file = "%s%s" % (file_path_head, 'target_value.csv')
-    # get_target_value(xml_file, target_value_file)
+    # target_value_file = "%s%s" % (file_path_head, 'target_value.csv')
+    # # get_target_value(xml_file, target_value_file)
 
-    img_info_file = "%s%s" % (file_path_head, 'output.csv')
-    actual_element_file = "%s%s" % (file_path_head, 'actual_element.csv')
-    # get_actual_elements(img_info_file, actual_element_file)
+    # img_info_file = "%s%s" % (file_path_head, 'output.csv')
+    # actual_element_file = "%s%s" % (file_path_head, 'actual_element.csv')
+    # # get_actual_elements(img_info_file, actual_element_file)
 
-    actual_value_file = "%s%s" % (file_path_head, 'actual_value.csv')
+    # actual_value_file = "%s%s" % (file_path_head, 'actual_value.csv')
     # get_actual_value(actual_element_file, actual_value_file)
 
     # filew = csv.writer(open('T3/c.csv', 'w'))
@@ -396,7 +408,9 @@ def main():
     # compare_difference2(target_value_file, actual_value_file)
 
     elapsed = (time.clock() - start)
+    elapsed2 = (time.clock() - midTime)
+    print '\nimage processing time: ' + str(elapsed2) + 's'
     print '\nprocessing time: ' + str(elapsed) + 's'
 
 
-main()
+main(args.path)
