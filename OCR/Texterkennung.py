@@ -22,6 +22,8 @@ from tkFileDialog import askopenfilename
 #                         help='path to schema')
 # args = parser.parse_args()
 
+tk2 = None
+
 
 def load_screenshots(img_path, images):
     # showImage = 0
@@ -432,7 +434,8 @@ def gui():
     panelWord.pack(side="bottom")
     button = Tkinter.Button(frame, text="Load", command=callback)
     # button.pack(side="left", padx=10, pady=10)
-    button.place(x=windowW/2-100, y=windowH-100)
+    # button.place(x=windowW/2-100, y=windowH-100)
+    button.pack(side="bottom")
     # button2 = Tkinter.Button(frame, text="Recognize", command=main)
     # button2.place(x=windowW/2, y=windowH-100)
     isPressed = True
@@ -455,8 +458,22 @@ def getPressed(event):
 def getReleased(event):
     global end, im2save
     end = [event.x, event.y]
+    try:
+        tk2.destroy()
+    except:
+        pass
     # im2save = np.arange(0)
     if len(im2pro) > 0:
+        if start[1] >= end[1]:
+            tmp = end[1]
+            end[1] = start[1]
+            start[1] = tmp
+
+        if start[0] >= end[0]:
+            tmp = end[0]
+            end[0] = start[0]
+            start[0] = tmp
+        print start, end
         im2save = im2pro[start[1]:end[1], start[0]:end[0]]
         cv2.imwrite("./tmp.png", im2save)
         main()
