@@ -5,29 +5,42 @@
 import csv
 from cv2 import cv2
 import glob
-from PIL import Image
+from PIL import Image, ImageTk
 from skimage.measure import compare_ssim as ssim
 # import sys
 import tesserocr
 import time
 import xml.etree.ElementTree as ET
-import argparse
+# import argparse
+import Tkinter
+from tkFileDialog import askopenfilename
+# import numpy as np
 
 
-parser = argparse.ArgumentParser(description='Create a ArcHydro schema')
-parser.add_argument('--path', metavar='path', required=True,
-                        help='path to schema')
-args = parser.parse_args()
+# parser = argparse.ArgumentParser(description='Create a schema')
+# parser.add_argument('--path', metavar='path', required=True,
+#                         help='path to schema')
+# args = parser.parse_args()
 
 
 def load_screenshots(img_path, images):
+    # showImage = 0
+    global im2pro
+    # im2pro = np.arange(0)
     filenames = [img for img in glob.glob(img_path)]
     filenames.sort()
+    # print filenames
     for img in filenames:
         # read image as grayscale format
         # n = cv2.imread(img, 0)
-        n = cv2.imread(img)
-        images.append(n)
+        im2pro = cv2.imread(img, 1)
+        if len(im2pro != 660):
+            im2pro = cv2.resize(im2pro, (1280, 660), interpolation=cv2.INTER_LINEAR)
+            cv2.imwrite('resize.png', im2pro)
+            return 'resize.png'
+        # showImage = ImageTk.PhotoImage(Image.open(img))
+    # print showImage 
+    return filenames[0]    
 
 
 def image_processing(imageA, img0, lang, csv_file):
@@ -35,112 +48,132 @@ def image_processing(imageA, img0, lang, csv_file):
     img = imageA.copy()
     # prepare image quality for OCR
     img = cv2.bitwise_not(img)
-    _, img = cv2.threshold(img, 224, 255, cv2.THRESH_BINARY)
-
+    _, img = cv2.threshold(img, 210, 255, cv2.THRESH_BINARY)
+    cv2.imwrite('origin.png', img)
     # find text areas
     imgBi = cv2.bitwise_not(imageA)
-    _, binary2 = cv2.threshold(imgBi, 0, 255, cv2.THRESH_BINARY)
+    _, binary2 = cv2.threshold(imgBi, 250, 255, cv2.THRESH_BINARY)
+    cv2.imwrite('bi.png', binary2)
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (21, 20))
     eroded = cv2.erode(binary2, kernel, iterations=1)
     erodedBi = cv2.bitwise_not(eroded)
     cv2.imwrite('outputnot0.png', erodedBi)
     iimg, contours2, hierarchy2 = cv2.findContours(erodedBi, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     # find head area for OCR text with color
-    headArea = img[104:204, 319:1493]
-    erodedHead = cv2.erode(headArea, kernel, iterations=1)
-    erodedHead = cv2.bitwise_not(erodedHead)
-    cv2.imwrite('outputnot.png', erodedHead)
-    iimg, contours, hierarchy = cv2.findContours(erodedHead, cv2.RETR_EXTERNAL,
-                                           cv2.CHAIN_APPROX_SIMPLE)
-    global midTime
-    midTime = time.clock()
+    # headArea = img[104:204, 319:1493]
+    # erodedHead = cv2.erode(headArea, kernel, iterations=1)
+    # erodedHead = cv2.bitwise_not(erodedHead)
+    # cv2.imwrite('outputnot.png', erodedHead)
+    # iimg, contours, hierarchy = cv2.findContours(erodedHead, cv2.RETR_EXTERNAL,
+    #                                        cv2.CHAIN_APPROX_SIMPLE)
 
-    for i in range(len(contours)):
-        x, y, w, h = cv2.boundingRect(contours[i])
-        if w < 1000:
-            count += 1
-            cv2.rectangle(img0, (x + 319, y + 104), (x + 319 + w, y + 104 + h),
-                          (0, 255, 0), 2)
-            crop_img = headArea[y:y + h, x:x + w]
-            cv2.imwrite('ref.png', crop_img)
-            text = tesserocr.image_to_text(Image.open('ref.png'), lang)
-            text = text.replace(" ", "")
-            # print text
-            csv_file.write('{}:,{},{},{},{},{}\n'.format(
-                count, x, y, w, h, text.encode('utf-8')))
-
-    for j in range(len(contours2)):
-        # print(len(contours2))
+    # for i in range(len(contours)):
+    #     x, y, w, h = cv2.boundingRect(contours[i])
+    #     if w < 1000:
+    #         count += 1
+    #         cv2.rectangle(img0, (x + 319, y + 104), (x + 319 + w, y + 104 + h),
+    #                       (0, 255, 0), 2)
+    #         crop_img = headArea[y:y + h, x:x + w]
+    #         cv2.imwrite('ref.png', crop_img)
+    #         text = tesserocr.image_to_text(Image.open('ref.png'), lang)
+    #         text = text.replace(" ", "")
+    #         # print text
+    #         csv_file.write('{}:,{},{},{},{},{}\n'.format(
+    #             count, x, y, w, h, text.encode('utf-8')))
+    start = time.clock()
+    for i in range(len(contours2)):
+        print(len(contours2))
+        j = len(contours2) - 1 - i
         cnt2 = contours2[j]
         x2, y2, w2, h2 = cv2.boundingRect(cnt2)
         # print(str(x2) + '...' + str(y2) + '...' + str(w2) + '...' + str(h2))
-        if x2 > 120 and y2 > 20 and 2 < w2 and 2 < h2 < 450:
-            count += 1
-            cv2.rectangle(img0, (x2, y2), (x2 + w2, y2 + h2), (0, 255, 0), 2)
+        # if x2 > 120 and y2 > 20 and 2 < w2 and 2 < h2 < 450:
+        # cv2.rectangle(img0, (x2, y2), (x2 + w2, y2 + h2), (0, 255, 0), 2)
+        if w2 > 30 and h2 > 30:
             crop_img = img[y2:y2 + h2, x2:x2 + w2]
-            cv2.imwrite('ref.png', crop_img)
-            text = tesserocr.image_to_text(Image.open('ref.png').convert('L'), lang, psm=8)
+            cv2.imwrite('ref' + str(j) + '.png', crop_img)
+            if len(contours2) > 1:
+                if h2/2 < w2 < h2*2:  
+                    psm = 8  # treat as a single word
+                else:
+                    psm = 7  # treat as a line    
+            else:
+                if h2 > 50:
+                    psm = 6  # treat as a block
+                else:
+                    psm = 7    
+            text = tesserocr.image_to_text(Image.open('ref' + str(j) + '.png').convert('L'), lang, psm)
             text = text.replace(" ", "")
-            # print text
+            print text
             csv_file.write('{}:,{},{},{},{},{}\n'.format(
                 count, x2, y2, w2, h2, text.encode('utf-8')))
             if len(text) != 0:
                 text = text.strip()
-                print 'x:{}, y:{}, w:{}, h:{}, {}\n'.format(
+                # print 'x:{}, y:{}, w:{}, h:{}, {}\n'.format(
+                #     x2, y2, w2, h2, text.encode('utf-8'))
+                textLine = 'x:{}, y:{}, w:{}, h:{}, {}\n'.format(
                     x2, y2, w2, h2, text.encode('utf-8'))
-        else:
-            pass
+                result = Tkinter.Label(frame2, text=textLine)
+                result.pack()    
+            # else:
+            #     pass
+    end = time.clock()
+    calTime = 'used time for OCR:' + str((end - start) * 1000) + 'ms'
+    result = Tkinter.Label(frame2, text=calTime)
+    result.pack()
 
 
 def filter_screenshots(images, ref, lang, csv_file):
     with open(csv_file, 'w') as csv_file:
-        for i in range(len(images)):
-            imageA = images[i]
+        # for i in range(len(images)):
+            imageA = images
             height, width, depth = imageA.shape
+            print height, width
             # get chinese part of screenshots
-            imageA = imageA[0:720, 0:width]
+            # imageA = imageA[0:720, 0:width]
             img0 = imageA.copy()
             imageA = cv2.cvtColor(imageA, cv2.COLOR_BGR2GRAY)
             filename = 'output1.png'
             cv2.imwrite(filename, imageA)
-            if i < (len(images) - 1):
-                # print '\ni:' + str(i)
-                imageB = images[i + 1]
-                imageB = imageB[0:720, 0:width]
-                imageB = cv2.cvtColor(imageB, cv2.COLOR_BGR2GRAY)
+            image_processing(imageA, img0, lang, csv_file)
+            # if i < (len(images) - 1):
+            #     # print '\ni:' + str(i)
+            #     imageB = images[i + 1]
+            #     imageB = imageB[0:720, 0:width]
+            #     # imageB = cv2.cvtColor(imageB, cv2.COLOR_BGR2GRAY)
 
-                # rescale iamges to realise fast difference calculation
-                imgA = cv2.resize(
-                    imageA, (8, 8), interpolation=cv2.INTER_LINEAR)
-                imgB = cv2.resize(
-                    imageB, (8, 8), interpolation=cv2.INTER_LINEAR)
-                # compare differences between image i and image i+1
-                (score, diff) = ssim(imgA, imgB, full=True)
-                # diff = (diff * 255).astype("uint8")
-                if ref != i:
-                    image_processing(imageA, img0, lang, csv_file)
-                    # cv2.imshow('', img0)
-                    # cv2.waitKey()
-                    # cv2.destroyAllWindows()
-                else:
-                    pass
-                if score > 0.99:
-                    ref = i + 1
-                    # print 'ref:' + str(ref)
-                else:
-                    ref = i
-                    # print 'ref:' + str(ref)
-                # print("SSIM: {}".format(score))
+            #     # rescale iamges to realise fast difference calculation
+            #     imgA = cv2.resize(
+            #         imageA, (8, 8), interpolation=cv2.INTER_LINEAR)
+            #     imgB = cv2.resize(
+            #         imageB, (8, 8), interpolation=cv2.INTER_LINEAR)
+            #     # compare differences between image i and image i+1
+            #     (score, diff) = ssim(imgA, imgB, full=True)
+            #     # diff = (diff * 255).astype("uint8")
+            #     if ref != i:
+            #         image_processing(imageA, img0, lang, csv_file)
+            #         # cv2.imshow('', img0)
+            #         # cv2.waitKey()
+            #         # cv2.destroyAllWindows()
+            #     else:
+            #         pass
+            #     if score > 0.99:
+            #         ref = i + 1
+            #         # print 'ref:' + str(ref)
+            #     else:
+            #         ref = i
+            #         # print 'ref:' + str(ref)
+            #     # print("SSIM: {}".format(score))
 
-            else:
-                if ref != i:
-                    # print '\ni:' + str(i) + '\nref:' + str(ref)
-                    image_processing(imageA, img0, lang, csv_file)
-                    # cv2.imshow('', img0)
-                    # cv2.waitKey()
-                    # cv2.destroyAllWindows()
-                # else:
-                # print '\ni:' + str(i) + '\nref:' + str(ref)
+            # else:
+            #     if ref != i:
+            #         # print '\ni:' + str(i) + '\nref:' + str(ref)
+            #         image_processing(imageA, img0, lang, csv_file)
+            #         # cv2.imshow('', img0)
+            #         # cv2.waitKey()
+            #         # cv2.destroyAllWindows()
+            #     # else:
+            #     # print '\ni:' + str(i) + '\nref:' + str(ref)
 
 
 def get_target_value(xml_file, target_value_file):
@@ -366,24 +399,96 @@ def compare_difference2(target_value_file, actual_value_file):
             # print 'wrong:' + str(total2 - countCorrect2)
 
 
-def main(path=args.path):
-    start = time.clock()             
-    file_path_head = path + '/'
-    # file_path_head = sys.argv[1]
-    img_path = "%s%s" % (file_path_head, '*.png')
+def callback():
+    global img_path
+    name = askopenfilename()
+    img_path = load_screenshots(name, images)
+    showImage = ImageTk.PhotoImage(Image.open(img_path))
+    # print showImage
+    canvas.create_image(640, 330, image=showImage)
+    canvas.image = showImage
+    # print showImage
+    canvas.pack()
+    # subFramePic.update()
+
+
+def gui():
+    global frame, images, panel, tk, isPressed, canvas, horibound
     images = []
-    load_screenshots(img_path, images)
-    lang = 't8'
+    tk = Tkinter.Tk()
+    windowH = tk.winfo_screenheight()
+    windowW = tk.winfo_screenwidth()
+    tk.geometry(str(windowW) + "x" + str(windowH))
+    # menubar = Tkinter.Menu(tk)
+    # filemenu = Tkinter.Menu(menubar)
+    # filemenu.add_cascade(label="File", menu=filemenu)
+    # menubar.pack(expand=1)
+    # filemenu.add_command(label="New Project", command=quit())
+    frame = Tkinter.Frame(tk, relief="ridge", borderwidth=1)
+    frame.pack(fill="both", expand=1)
+    canvas = Tkinter.Canvas(frame, width=1280, height=660)
+    canvas.pack(side="top", pady=100)
+    panelWord = Tkinter.Label(frame)
+    panelWord.pack(side="bottom")
+    button = Tkinter.Button(frame, text="Load", command=callback)
+    # button.pack(side="left", padx=10, pady=10)
+    button.place(x=windowW/2-100, y=windowH-100)
+    # button2 = Tkinter.Button(frame, text="Recognize", command=main)
+    # button2.place(x=windowW/2, y=windowH-100)
+    isPressed = True
+    canvas.bind('<Button-1>', getPressed, "+")
+    canvas.bind('<ButtonRelease-1>', getReleased, "+")
+    canvas.bind('<B1-Motion>', getMotion)
+    tk.mainloop()
+
+
+def getMotion(event):
+    canvas.delete("no")
+    canvas.create_rectangle(*(list(start)+list([event.x, event.y])), tags="no", outline="red", width=5)
+
+
+def getPressed(event):
+    global start
+    start = [event.x, event.y]
+
+
+def getReleased(event):
+    global end, im2save
+    end = [event.x, event.y]
+    # im2save = np.arange(0)
+    if len(im2pro) > 0:
+        im2save = im2pro[start[1]:end[1], start[0]:end[0]]
+        cv2.imwrite("./tmp.png", im2save)
+        main()
+
+
+def main():
+    global tk2, frame2
+    tk2 = Tkinter.Tk()
+    tk2.geometry("500x500")
+    frame2 = Tkinter.Frame(tk2, relief="ridge", borderwidth=1)
+    start = time.clock()
+    # file_path_head = path + '/'
+    # # file_path_head = sys.argv[1]
+    # img_path = "%s%s" % (file_path_head, '*.png')
+    # load_screenshots(img_pat, images)
+    lang = 't8+eng'
     # lang = sys.argv[2]
     # imc = 0
     # for imgs in images:
     #     filename = 'outputimg' + str(imc) + '.png'
     #     cv2.imwrite(filename, imgs)
     #     imc += 1
+    images = cv2.imread("./tmp.png")
+    filenames = img_path.split('/')
+    file_path_head = ""
+    for idx in range(len(filenames)-1):
+        file_path_head += '/' + filenames[idx]
     csv_file = "%s%s" % (file_path_head, 'output.csv')
-
     ref = 1
     filter_screenshots(images, ref, lang, csv_file)
+    frame2.pack(fill="both", expand=1)
+    tk2.mainloop()
 
     # xml_file = sys.argv[2]
     # xml_file = 'T/CAR_DRIVE_SELECT_INDIVIDUAL_Evo2plus.xml'
@@ -408,9 +513,11 @@ def main(path=args.path):
     # compare_difference2(target_value_file, actual_value_file)
 
     elapsed = (time.clock() - start)
-    elapsed2 = (time.clock() - midTime)
-    print '\nimage processing time: ' + str(elapsed2) + 's'
     print '\nprocessing time: ' + str(elapsed) + 's'
 
 
-main(args.path)
+gui()
+# main(args.path)
+
+
+
