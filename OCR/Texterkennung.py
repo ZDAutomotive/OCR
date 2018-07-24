@@ -6,7 +6,7 @@ import csv
 from cv2 import cv2
 import glob
 from PIL import Image, ImageTk
-from skimage.measure import compare_ssim as ssim
+# from skimage.measure import compare_ssim as ssim
 # import sys
 import tesserocr
 import time
@@ -14,6 +14,8 @@ import xml.etree.ElementTree as ET
 # import argparse
 import Tkinter
 from tkFileDialog import askopenfilename
+import tkMessageBox
+import os
 # import numpy as np
 
 
@@ -51,15 +53,15 @@ def image_processing(imageA, img0, lang, csv_file):
     # prepare image quality for OCR
     img = cv2.bitwise_not(img)
     _, img = cv2.threshold(img, 210, 255, cv2.THRESH_BINARY)
-    cv2.imwrite('origin.png', img)
+    # cv2.imwrite('origin.png', img)
     # find text areas
     imgBi = cv2.bitwise_not(imageA)
     _, binary2 = cv2.threshold(imgBi, 250, 255, cv2.THRESH_BINARY)
-    cv2.imwrite('bi.png', binary2)
+    # cv2.imwrite('bi.png', binary2)
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (21, 20))
     eroded = cv2.erode(binary2, kernel, iterations=1)
     erodedBi = cv2.bitwise_not(eroded)
-    cv2.imwrite('outputnot0.png', erodedBi)
+    # cv2.imwrite('outputnot0.png', erodedBi)
     iimg, contours2, hierarchy2 = cv2.findContours(erodedBi, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     # find head area for OCR text with color
     # headArea = img[104:204, 319:1493]
@@ -84,7 +86,6 @@ def image_processing(imageA, img0, lang, csv_file):
     #             count, x, y, w, h, text.encode('utf-8')))
     start = time.clock()
     for i in range(len(contours2)):
-        print(len(contours2))
         j = len(contours2) - 1 - i
         cnt2 = contours2[j]
         x2, y2, w2, h2 = cv2.boundingRect(cnt2)
@@ -93,20 +94,21 @@ def image_processing(imageA, img0, lang, csv_file):
         # cv2.rectangle(img0, (x2, y2), (x2 + w2, y2 + h2), (0, 255, 0), 2)
         if w2 > 30 and h2 > 30:
             crop_img = img[y2:y2 + h2, x2:x2 + w2]
-            cv2.imwrite('ref' + str(j) + '.png', crop_img)
-            if len(contours2) > 1:
-                if h2/2 < w2 < h2*2:  
-                    psm = 8  # treat as a single word
-                else:
-                    psm = 7  # treat as a line    
+            cv2.imwrite('ref.png', crop_img)
+            # print len(contours2)
+            if len(contours2) > 1 and h2 < 50:
+                psm = 7
+            #     if h2/2 < w2 < h2*2:  
+            #         psm = 8  # treat as a single word
+            #     else:
+            #         psm = 7  # treat as a line    
             else:
                 if h2 > 50:
                     psm = 6  # treat as a block
                 else:
-                    psm = 7    
-            text = tesserocr.image_to_text(Image.open('ref' + str(j) + '.png').convert('L'), lang, psm)
+                    psm = 7
+            text = tesserocr.image_to_text(Image.open('ref.png').convert('L'), lang, psm)
             text = text.replace(" ", "")
-            print text
             csv_file.write('{}:,{},{},{},{},{}\n'.format(
                 count, x2, y2, w2, h2, text.encode('utf-8')))
             if len(text) != 0:
@@ -116,13 +118,14 @@ def image_processing(imageA, img0, lang, csv_file):
                 textLine = 'x:{}, y:{}, w:{}, h:{}, {}\n'.format(
                     x2, y2, w2, h2, text.encode('utf-8'))
                 result = Tkinter.Label(frame2, text=textLine)
-                result.pack()    
+                result.pack()  
             # else:
             #     pass
     end = time.clock()
     calTime = 'used time for OCR:' + str((end - start) * 1000) + 'ms'
     result = Tkinter.Label(frame2, text=calTime)
     result.pack()
+    os.unlink("./ref.png")
 
 
 def filter_screenshots(images, ref, lang, csv_file):
@@ -130,13 +133,12 @@ def filter_screenshots(images, ref, lang, csv_file):
         # for i in range(len(images)):
             imageA = images
             height, width, depth = imageA.shape
-            print height, width
             # get chinese part of screenshots
             # imageA = imageA[0:720, 0:width]
             img0 = imageA.copy()
             imageA = cv2.cvtColor(imageA, cv2.COLOR_BGR2GRAY)
-            filename = 'output1.png'
-            cv2.imwrite(filename, imageA)
+            # filename = 'output1.png'
+            # cv2.imwrite(filename, imageA)
             image_processing(imageA, img0, lang, csv_file)
             # if i < (len(images) - 1):
             #     # print '\ni:' + str(i)
@@ -415,27 +417,41 @@ def callback():
 
 
 def gui():
-    global frame, images, panel, tk, isPressed, canvas, horibound
+    global frame, images, panel, tk, isPressed, canvas, horibound, Chi, ChiEng, check1, check2
     images = []
     tk = Tkinter.Tk()
+    tk.title('OCR GUI')
     windowH = tk.winfo_screenheight()
     windowW = tk.winfo_screenwidth()
     tk.geometry(str(windowW) + "x" + str(windowH))
-    # menubar = Tkinter.Menu(tk)
-    # filemenu = Tkinter.Menu(menubar)
-    # filemenu.add_cascade(label="File", menu=filemenu)
+    menubar = Tkinter.Menu(tk)
+    tk.config(menu=menubar)
+    filemenu = Tkinter.Menu(menubar)
+    menubar.add_cascade(label="File", menu=filemenu)
     # menubar.pack(expand=1)
-    # filemenu.add_command(label="New Project", command=quit())
+    filemenu.add_command(label="Load File", command=callback)
     frame = Tkinter.Frame(tk, relief="ridge", borderwidth=1)
     frame.pack(fill="both", expand=1)
     canvas = Tkinter.Canvas(frame, width=1280, height=660)
-    canvas.pack(side="top", pady=100)
-    panelWord = Tkinter.Label(frame)
-    panelWord.pack(side="bottom")
-    button = Tkinter.Button(frame, text="Load", command=callback)
+    canvas.pack(side="top", pady=50)
+    # panelWord = Tkinter.Label(frame)
+    # panelWord.pack(side="bottom")
+    Chi = Tkinter.BooleanVar()
+    Chi = True
+    check1 = Tkinter.Checkbutton(frame, text="Chinese", variable=Chi, command=Sel1)
+    check1.select()
+    check1.place(x=windowW/2-200, y=windowH-150)
+
+    ChiEng = Tkinter.BooleanVar()
+    ChiEng = False
+    check2 = Tkinter.Checkbutton(frame, text="Chinese + English", variable=ChiEng, command=Sel2)
+    check2.deselect()
+    check2.place(x=windowW/2-50, y=windowH-150)
+
+    # button = Tkinter.Button(frame, text="Load", command=callback)
     # button.pack(side="left", padx=10, pady=10)
     # button.place(x=windowW/2-100, y=windowH-100)
-    button.pack(side="bottom")
+    # button.pack(side="bottom")
     # button2 = Tkinter.Button(frame, text="Recognize", command=main)
     # button2.place(x=windowW/2, y=windowH-100)
     isPressed = True
@@ -443,6 +459,26 @@ def gui():
     canvas.bind('<ButtonRelease-1>', getReleased, "+")
     canvas.bind('<B1-Motion>', getMotion)
     tk.mainloop()
+
+
+def Sel1():
+    global Chi, ChiEng
+    if Chi:
+        Chi = False
+    else:
+        Chi = True
+        ChiEng = False   
+    check2.deselect()
+
+
+def Sel2():
+    global ChiEng, Chi
+    if ChiEng:
+        ChiEng = False
+    else:
+        ChiEng = True
+        Chi = False  
+    check1.deselect()
 
 
 def getMotion(event):
@@ -457,6 +493,14 @@ def getPressed(event):
 
 def getReleased(event):
     global end, im2save
+    if event.x < 0:
+        event.x = 0
+    if event.x > 1280:
+        event.x = 1280
+    if event.y < 0:
+        event.y = 0
+    if event.y > 660:
+        event.y = 660             
     end = [event.x, event.y]
     try:
         tk2.destroy()
@@ -473,39 +517,47 @@ def getReleased(event):
             tmp = end[0]
             end[0] = start[0]
             start[0] = tmp
-        print start, end
         im2save = im2pro[start[1]:end[1], start[0]:end[0]]
         cv2.imwrite("./tmp.png", im2save)
         main()
+        os.unlink("./tmp.png")
+        os.unlink("./resize.png")
 
 
 def main():
     global tk2, frame2
-    tk2 = Tkinter.Tk()
-    tk2.geometry("500x500")
-    frame2 = Tkinter.Frame(tk2, relief="ridge", borderwidth=1)
-    start = time.clock()
+    # start = time.clock()
     # file_path_head = path + '/'
     # # file_path_head = sys.argv[1]
     # img_path = "%s%s" % (file_path_head, '*.png')
     # load_screenshots(img_pat, images)
-    lang = 't8+eng'
+    if Chi:
+        lang = 't8'
+    elif ChiEng:
+        lang = 't8+eng'
+    else:
+        tkMessageBox.showwarning("Warning", "Must select a language model")
     # lang = sys.argv[2]
     # imc = 0
     # for imgs in images:
     #     filename = 'outputimg' + str(imc) + '.png'
     #     cv2.imwrite(filename, imgs)
     #     imc += 1
-    images = cv2.imread("./tmp.png")
-    filenames = img_path.split('/')
-    file_path_head = ""
-    for idx in range(len(filenames)-1):
-        file_path_head += '/' + filenames[idx]
-    csv_file = "%s%s" % (file_path_head, 'output.csv')
-    ref = 1
-    filter_screenshots(images, ref, lang, csv_file)
-    frame2.pack(fill="both", expand=1)
-    tk2.mainloop()
+    if Chi or ChiEng:
+        tk2 = Tkinter.Tk()
+        tk2.geometry("500x500")
+        tk2.title('Recognized Text')
+        frame2 = Tkinter.Frame(tk2, relief="ridge", borderwidth=1)
+        images = cv2.imread("./tmp.png")
+        filenames = img_path.split('/')
+        file_path_head = ""
+        for idx in range(len(filenames)-1):
+            file_path_head += '/' + filenames[idx]
+        csv_file = "%s%s" % (file_path_head, 'output.csv')
+        ref = 1
+        filter_screenshots(images, ref, lang, csv_file)
+        frame2.pack(fill="both", expand=1)
+        tk2.mainloop()
 
     # xml_file = sys.argv[2]
     # xml_file = 'T/CAR_DRIVE_SELECT_INDIVIDUAL_Evo2plus.xml'
@@ -529,8 +581,8 @@ def main():
     # filew2 = csv.writer(open('T3/c.csv', 'w'))
     # compare_difference2(target_value_file, actual_value_file)
 
-    elapsed = (time.clock() - start)
-    print '\nprocessing time: ' + str(elapsed) + 's'
+    # elapsed = (time.clock() - start)
+    # print '\nprocessing time: ' + str(elapsed) + 's'
 
 
 gui()
