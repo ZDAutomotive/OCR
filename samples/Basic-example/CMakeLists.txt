@@ -1,0 +1,6 @@
+set(the_target "Basic-example")
+find_package(Tesseract REQUIRED)
+aux_source_directory(. SRC_LIST)
+include_directories(${Tesseract_INCLUDE_DIRS})
+add_executable(${the_target} ${SRC_LIST})
+target_link_libraries(${the_target} ${Tesseract_LIBS})

@@ -12,11 +12,13 @@ import tesserocr
 import time
 import xml.etree.ElementTree as ET
 # import argparse
-import Tkinter
-from tkFileDialog import askopenfilename
-import tkMessageBox
+import tkinter
+from tkinter import filedialog
+# from tkFileDialog import askopenfilename
+from tkinter import messagebox
+# import tkMessageBox
 import os
-# import numpy as np
+import numpy as np
 
 
 # parser = argparse.ArgumentParser(description='Create a schema')
@@ -27,24 +29,43 @@ import os
 tk2 = None
 
 
+# def load_screenshots(img_path, images):
+#     # showImage = 0
+#     global im2pro
+#     im2pro = np.arange(0)
+#     print (img_path)
+#     filenames = [img for img in img_path]
+#     print (filenames)
+#     # filenames.sort()
+#     # directory
+#     for img in filenames:
+#         # read image as grayscale format
+#         # n = cv2.imread(img, 0)
+#         im2pro = cv2.imread(img, 1)
+#         if len(im2pro != 660):
+#             im2pro = cv2.resize(im2pro, (1280, 660), interpolation=cv2.INTER_LINEAR)
+#             cv2.imwrite('resize.png', im2pro)
+#             return 'resize.png'
+#         # showImage = ImageTk.PhotoImage(Image.open(img))
+#     # print showImage
+#     print (filenames)
+#     return filenames[0]
+
+
 def load_screenshots(img_path, images):
     # showImage = 0
     global im2pro
-    # im2pro = np.arange(0)
-    filenames = [img for img in glob.glob(img_path)]
-    filenames.sort()
-    # print filenames
-    for img in filenames:
-        # read image as grayscale format
-        # n = cv2.imread(img, 0)
-        im2pro = cv2.imread(img, 1)
-        if len(im2pro != 660):
-            im2pro = cv2.resize(im2pro, (1280, 660), interpolation=cv2.INTER_LINEAR)
-            cv2.imwrite('resize.png', im2pro)
-            return 'resize.png'
+    im2pro = cv2.imread(img_path, 1)
+    # filenames.sort()
+    # directory
+    print (img_path)
+    if len(im2pro != 660):
+        im2pro = cv2.resize(im2pro, (1280, 660), interpolation=cv2.INTER_LINEAR)
+        cv2.imwrite('resize.png', im2pro)
+        return 'resize.png'
         # showImage = ImageTk.PhotoImage(Image.open(img))
-    # print showImage 
-    return filenames[0]    
+    # print showImage
+    return img_path
 
 
 def image_processing(imageA, img0, lang, csv_file):
@@ -52,16 +73,26 @@ def image_processing(imageA, img0, lang, csv_file):
     img = imageA.copy()
     # prepare image quality for OCR
     img = cv2.bitwise_not(img)
-    _, img = cv2.threshold(img, 210, 255, cv2.THRESH_BINARY)
-    # cv2.imwrite('origin.png', img)
+    _, binary2 = cv2.threshold(img, 210, 255, cv2.THRESH_BINARY)
     # find text areas
-    imgBi = cv2.bitwise_not(imageA)
-    _, binary2 = cv2.threshold(imgBi, 250, 255, cv2.THRESH_BINARY)
-    # cv2.imwrite('bi.png', binary2)
-    kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (21, 20))
-    eroded = cv2.erode(binary2, kernel, iterations=1)
-    erodedBi = cv2.bitwise_not(eroded)
-    # cv2.imwrite('outputnot0.png', erodedBi)
+    # imgBi = cv2.bitwise_not(imageA)
+    # _, binary2 = cv2.threshold(imgBi, 250, 255, cv2.THRESH_BINARY)
+    kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
+    kernel2 = cv2.getStructuringElement(cv2.MORPH_RECT, (20, 20))
+    kernel3 = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 5))
+    # kernel3 = np.ones((2,2), np.uint8)
+    # mask = cv2.erode(binary2, kernel, iterations=1)
+    # mask = cv2.dilate(mask, kernel, iterations=1)
+    # cv2.imwrite('outputnot0.png', mask)
+    # iimg, contours1, hierarchy2 = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    binary2 = cv2.bitwise_not(binary2)
+    erodedBi = cv2.erode(binary2, kernel, iterations=1)
+    erodedBi = cv2.dilate(erodedBi, kernel2, iterations=1)
+    erodedBi2 = cv2.erode(binary2, kernel3, iterations=1)
+    erodedBi2 = cv2.dilate(erodedBi2, kernel2, iterations=1)
+    # eroded = cv2.erode(mask, kernel, iterations=1)
+    cv2.imwrite('outputnot1.png', erodedBi)
+    cv2.imwrite('outputnot2.png', erodedBi2)
     iimg, contours2, hierarchy2 = cv2.findContours(erodedBi, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     # find head area for OCR text with color
     # headArea = img[104:204, 319:1493]
@@ -95,6 +126,7 @@ def image_processing(imageA, img0, lang, csv_file):
         if w2 > 30 and h2 > 30:
             crop_img = img[y2:y2 + h2, x2:x2 + w2]
             cv2.imwrite('ref.png', crop_img)
+            # cv2.imwrite('ref2.png', cv2.bitwise_not(crop_img))
             # print len(contours2)
             if len(contours2) > 1 and h2 < 50:
                 psm = 7
@@ -107,7 +139,8 @@ def image_processing(imageA, img0, lang, csv_file):
                     psm = 6  # treat as a block
                 else:
                     psm = 7
-            text = tesserocr.image_to_text(Image.open('ref.png').convert('L'), lang, psm)
+            text = tesserocr.image_to_text(Image.open('ref.png').convert('L'), lang, psm, oem=1)
+            # text2 = tesserocr.image_to_text(Image.open('ref2.png').convert('L'), lang, psm, oem=1)
             text = text.replace(" ", "")
             csv_file.write('{}:,{},{},{},{},{}\n'.format(
                 count, x2, y2, w2, h2, text.encode('utf-8')))
@@ -115,17 +148,18 @@ def image_processing(imageA, img0, lang, csv_file):
                 text = text.strip()
                 # print 'x:{}, y:{}, w:{}, h:{}, {}\n'.format(
                 #     x2, y2, w2, h2, text.encode('utf-8'))
+                # in Linux !!!!!!!!!!!!!
                 textLine = 'x:{}, y:{}, w:{}, h:{}, {}\n'.format(
                     x2, y2, w2, h2, text.encode('utf-8'))
-                result = Tkinter.Label(frame2, text=textLine)
+                result = tkinter.Label(frame2, text=text)
                 result.pack()  
             # else:
             #     pass
     end = time.clock()
     calTime = 'used time for OCR:' + str((end - start) * 1000) + 'ms'
-    result = Tkinter.Label(frame2, text=calTime)
+    result = tkinter.Label(frame2, text=calTime)
     result.pack()
-    os.unlink("./ref.png")
+    # os.unlink("./ref.png")
 
 
 def filter_screenshots(images, ref, lang, csv_file):
@@ -290,10 +324,10 @@ def compare_difference(target_value_file, actual_value_file):
                                      str(similarity) + ')')
             accuracy = (countCorrect / float(total)) * 100.00
 
-            print '======================================================'
-            print 'Correct:\n', '\n'.join(str(item) for item in correct)
-            print '\n-------------------------------------------'
-            print 'Wrong test cases:\n', '\n'.join(str(item) for item in wrong)
+            # print '======================================================'
+            # print 'Correct:\n', '\n'.join(str(item) for item in correct)
+            # print '\n-------------------------------------------'
+            # print 'Wrong test cases:\n', '\n'.join(str(item) for item in wrong)
             # print '\n-------------------------------------------'
             # print 'accuracy:' + str(accuracy)
             # print 'correct:' + str(countCorrect)
@@ -371,13 +405,13 @@ def compare_difference2(target_value_file, actual_value_file):
 
             accuracy2 = (countCorrect2 / float(total2)) * 100.00
 
-            print '\n======================================================'
+            # print '\n======================================================'
             # print 'Correct:\n\n', '\n'.join(str(item) for item in correct2)
-            print 'Correct: \n'
-            correct2set = set(correct2)
-            for item in correct2set:
-                print("%s  found %d times" % (item, correct2.count(item)))
-            print '\n-------------------------------------------'
+            # print 'Correct: \n'
+            # correct2set = set(correct2)
+            # for item in correct2set:
+            #     print("%s  found %d times" % (item, correct2.count(item)))
+            # print '\n-------------------------------------------'
             # count text repeat times
             # repeat = {}
             # for i in correct2:
@@ -385,17 +419,17 @@ def compare_difference2(target_value_file, actual_value_file):
             #         repeat[i] = correct2.count(i)
             # print repeat
             # print 'possible right (70% < similarity < 100%):\n\n', '\n'.join(str(item) for item in wrong2)
-            print 'possible right (70% < similarity < 100%):\n'
-            '\n'.join(str(item) for item in judge2)
-            judge2set = set(judge2)
-            for item in judge2set:
-                print("%s  found %d times" % (item, judge2.count(item)))
-            print '\n-------------------------------------------'
-            # print 'Wrong:\n\n', '\n'.join(str(item) for item in wrong2)
-            print 'Wrong: \n'
-            wrong2set = set(wrong2)
-            for item in wrong2set:
-                print("%s  found %d times" % (item, wrong2.count(item)))
+            # print 'possible right (70% < similarity < 100%):\n'
+            # '\n'.join(str(item) for item in judge2)
+            # judge2set = set(judge2)
+            # for item in judge2set:
+            #     print("%s  found %d times" % (item, judge2.count(item)))
+            # print '\n-------------------------------------------'
+            # # print 'Wrong:\n\n', '\n'.join(str(item) for item in wrong2)
+            # print 'Wrong: \n'
+            # wrong2set = set(wrong2)
+            # for item in wrong2set:
+            #     print("%s  found %d times" % (item, wrong2.count(item)))
 
             # print '\n-------------------------------------------'
             # print 'accuracy:' + str(accuracy2)
@@ -405,7 +439,8 @@ def compare_difference2(target_value_file, actual_value_file):
 
 def callback():
     global img_path
-    name = askopenfilename()
+    name = filedialog.askopenfilename()
+    # name = askopenfilename()
     img_path = load_screenshots(name, images)
     showImage = ImageTk.PhotoImage(Image.open(img_path))
     # print showImage
@@ -419,32 +454,32 @@ def callback():
 def gui():
     global frame, images, panel, tk, isPressed, canvas, horibound, Chi, ChiEng, check1, check2
     images = []
-    tk = Tkinter.Tk()
+    tk = tkinter.Tk()
     tk.title('OCR GUI')
     windowH = tk.winfo_screenheight()
     windowW = tk.winfo_screenwidth()
     tk.geometry(str(windowW) + "x" + str(windowH))
-    menubar = Tkinter.Menu(tk)
+    menubar = tkinter.Menu(tk)
     tk.config(menu=menubar)
-    filemenu = Tkinter.Menu(menubar)
+    filemenu = tkinter.Menu(menubar)
     menubar.add_cascade(label="File", menu=filemenu)
     # menubar.pack(expand=1)
     filemenu.add_command(label="Load File", command=callback)
-    frame = Tkinter.Frame(tk, relief="ridge", borderwidth=1)
+    frame = tkinter.Frame(tk, relief="ridge", borderwidth=1)
     frame.pack(fill="both", expand=1)
-    canvas = Tkinter.Canvas(frame, width=1280, height=660)
+    canvas = tkinter.Canvas(frame, width=1280, height=660)
     canvas.pack(side="top", pady=50)
     # panelWord = Tkinter.Label(frame)
     # panelWord.pack(side="bottom")
-    Chi = Tkinter.BooleanVar()
+    Chi = tkinter.BooleanVar()
     Chi = True
-    check1 = Tkinter.Checkbutton(frame, text="Chinese", variable=Chi, command=Sel1)
+    check1 = tkinter.Checkbutton(frame, text="Chinese", variable=Chi, command=Sel1)
     check1.select()
     check1.place(x=windowW/2-200, y=windowH-150)
 
-    ChiEng = Tkinter.BooleanVar()
+    ChiEng = tkinter.BooleanVar()
     ChiEng = False
-    check2 = Tkinter.Checkbutton(frame, text="Chinese + English", variable=ChiEng, command=Sel2)
+    check2 = tkinter.Checkbutton(frame, text="Chinese + English", variable=ChiEng, command=Sel2)
     check2.deselect()
     check2.place(x=windowW/2-50, y=windowH-150)
 
@@ -532,11 +567,12 @@ def main():
     # img_path = "%s%s" % (file_path_head, '*.png')
     # load_screenshots(img_pat, images)
     if Chi:
-        lang = 't8'
+        lang = 'eng'
     elif ChiEng:
         lang = 't8+eng'
     else:
-        tkMessageBox.showwarning("Warning", "Must select a language model")
+        messagebox.showwarning("Warning", "Must select a language model")
+        # tkMessageBox.showwarning("Warning", "Must select a language model")
     # lang = sys.argv[2]
     # imc = 0
     # for imgs in images:
@@ -544,10 +580,10 @@ def main():
     #     cv2.imwrite(filename, imgs)
     #     imc += 1
     if Chi or ChiEng:
-        tk2 = Tkinter.Tk()
+        tk2 = tkinter.Tk()
         tk2.geometry("500x500")
         tk2.title('Recognized Text')
-        frame2 = Tkinter.Frame(tk2, relief="ridge", borderwidth=1)
+        frame2 = tkinter.Frame(tk2, relief="ridge", borderwidth=1)
         images = cv2.imread("./tmp.png")
         filenames = img_path.split('/')
         file_path_head = ""

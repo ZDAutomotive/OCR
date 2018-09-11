@@ -1,0 +1,18 @@
+﻿Build started 11.09.2018 15:18:20.
+     1>Project "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\Basic-example\Basic-example.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Users\ZD\Desktop\Tesseract\include /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Basic-example.dir\Debug\\" /Fd"Basic-example.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\Basic-example\Basic-example.cpp"
+         Basic-example.cpp
+     1>c:\users\zd\desktop\tesseract\include\leptonica\environ.h(446): warning C4005: “snprintf”: 宏重定义
+                 c:\users\zd\desktop\tesseract\include\tesseract\platform.h(33) : 参见“snprintf”的前一个定义
+     1>c:\users\zd\desktop\tesseract\include\leptonica\pix.h(209): warning C4305: “初始化”: 从“double”到“const l_float32”截断
+     1>c:\users\zd\desktop\tesseract\include\leptonica\pix.h(211): warning C4305: “初始化”: 从“double”到“const l_float32”截断
+     1>C:\Users\ZD\Desktop\tesseract-3.04.01\samples\Basic-example\Basic-example.cpp(6): warning C4101: “outText”: 未引用的局部变量
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\Basic-example\Debug\Basic-example.exe" /INCREMENTAL /NOLOGO C:\Users\ZD\Desktop\Tesseract\lib\liblept171d.lib C:\Users\ZD\Desktop\Tesseract\lib\libtesseract304d.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/Basic-example/Debug/Basic-example.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/Basic-example/Debug/Basic-example.lib" /MACHINE:X86 /SAFESEH  /machine:X86 "Basic-example.dir\Debug\Basic-example.obj"
+         Basic-example.vcxproj -> C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\Basic-example\Debug\Basic-example.exe
+     1>Done Building Project "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\Basic-example\Basic-example.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.28

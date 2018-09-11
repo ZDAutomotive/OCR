@@ -1,0 +1,3 @@
+C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/Basic-example/CMakeFiles/Basic-example.dir
