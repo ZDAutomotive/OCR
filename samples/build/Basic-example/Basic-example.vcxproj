@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{4695A521-B7F2-3951-A470-15894C167CFA}</ProjectGuid>
+    <ProjectGuid>{753ACA19-8A80-3A0D-83D0-E5AB1390F3B2}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>Basic-example</ProjectName>
@@ -54,25 +54,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\Basic-example\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\ZD\Desktop\samples\build\Basic-example\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Basic-example.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Basic-example</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\Basic-example\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\ZD\Desktop\samples\build\Basic-example\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Basic-example.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Basic-example</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\Basic-example\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\ZD\Desktop\samples\build\Basic-example\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Basic-example.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Basic-example</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\Basic-example\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\ZD\Desktop\samples\build\Basic-example\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Basic-example.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Basic-example</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
@@ -114,8 +114,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/Basic-example/Debug/Basic-example.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/Basic-example/Debug/Basic-example.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/ZD/Desktop/samples/build/Basic-example/Debug/Basic-example.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/ZD/Desktop/samples/build/Basic-example/Debug/Basic-example.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -157,8 +157,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/Basic-example/Release/Basic-example.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/Basic-example/Release/Basic-example.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/ZD/Desktop/samples/build/Basic-example/Release/Basic-example.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/ZD/Desktop/samples/build/Basic-example/Release/Basic-example.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -200,8 +200,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/Basic-example/MinSizeRel/Basic-example.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/Basic-example/MinSizeRel/Basic-example.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/ZD/Desktop/samples/build/Basic-example/MinSizeRel/Basic-example.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/ZD/Desktop/samples/build/Basic-example/MinSizeRel/Basic-example.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -242,8 +242,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/Basic-example/RelWithDebInfo/Basic-example.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/Basic-example/RelWithDebInfo/Basic-example.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/ZD/Desktop/samples/build/Basic-example/RelWithDebInfo/Basic-example.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/ZD/Desktop/samples/build/Basic-example/RelWithDebInfo/Basic-example.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -251,10 +251,10 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ZD\Desktop\tesseract-3.04.01\samples\Basic-example\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/ZD/Desktop/tesseract-3.04.01/samples/Basic-example/CMakeLists.txt</Message>
+    <CustomBuild Include="C:\Users\ZD\Desktop\samples\Basic-example\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/ZD/Desktop/samples/Basic-example/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/ZD/Desktop/tesseract-3.04.01/samples -BC:/Users/ZD/Desktop/tesseract-3.04.01/samples/build --check-stamp-file C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/Basic-example/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/ZD/Desktop/samples -BC:/Users/ZD/Desktop/samples/build --check-stamp-file C:/Users/ZD/Desktop/samples/build/Basic-example/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -262,12 +262,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/ZD/Desktop/tesseract-3.04.01/samples/Basic-example/CMakeLists.txt;C:\Users\ZD\Desktop\Tesseract\TesseractConfig.cmake;C:\Users\ZD\Desktop\tesseract-3.04.01\samples\Basic-example\CMakeLists.txt;C:\Users\ZD\Desktop\tesseract-3.04.01\samples\Basic-example\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\Basic-example\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/ZD/Desktop/samples/Basic-example/CMakeLists.txt;C:\Users\ZD\Desktop\Tesseract\TesseractConfig.cmake;C:\Users\ZD\Desktop\samples\Basic-example\CMakeLists.txt;C:\Users\ZD\Desktop\samples\Basic-example\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\ZD\Desktop\samples\build\Basic-example\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/ZD/Desktop/tesseract-3.04.01/samples/Basic-example/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/ZD/Desktop/samples/Basic-example/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/ZD/Desktop/tesseract-3.04.01/samples -BC:/Users/ZD/Desktop/tesseract-3.04.01/samples/build --check-stamp-file C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/Basic-example/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/ZD/Desktop/samples -BC:/Users/ZD/Desktop/samples/build --check-stamp-file C:/Users/ZD/Desktop/samples/build/Basic-example/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -275,12 +275,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/ZD/Desktop/tesseract-3.04.01/samples/Basic-example/CMakeLists.txt;C:\Users\ZD\Desktop\Tesseract\TesseractConfig.cmake;C:\Users\ZD\Desktop\tesseract-3.04.01\samples\Basic-example\CMakeLists.txt;C:\Users\ZD\Desktop\tesseract-3.04.01\samples\Basic-example\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\Basic-example\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/ZD/Desktop/samples/Basic-example/CMakeLists.txt;C:\Users\ZD\Desktop\Tesseract\TesseractConfig.cmake;C:\Users\ZD\Desktop\samples\Basic-example\CMakeLists.txt;C:\Users\ZD\Desktop\samples\Basic-example\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\ZD\Desktop\samples\build\Basic-example\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/ZD/Desktop/tesseract-3.04.01/samples/Basic-example/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/ZD/Desktop/samples/Basic-example/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/ZD/Desktop/tesseract-3.04.01/samples -BC:/Users/ZD/Desktop/tesseract-3.04.01/samples/build --check-stamp-file C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/Basic-example/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/ZD/Desktop/samples -BC:/Users/ZD/Desktop/samples/build --check-stamp-file C:/Users/ZD/Desktop/samples/build/Basic-example/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -288,12 +288,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/ZD/Desktop/tesseract-3.04.01/samples/Basic-example/CMakeLists.txt;C:\Users\ZD\Desktop\Tesseract\TesseractConfig.cmake;C:\Users\ZD\Desktop\tesseract-3.04.01\samples\Basic-example\CMakeLists.txt;C:\Users\ZD\Desktop\tesseract-3.04.01\samples\Basic-example\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\Basic-example\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/ZD/Desktop/samples/Basic-example/CMakeLists.txt;C:\Users\ZD\Desktop\Tesseract\TesseractConfig.cmake;C:\Users\ZD\Desktop\samples\Basic-example\CMakeLists.txt;C:\Users\ZD\Desktop\samples\Basic-example\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\ZD\Desktop\samples\build\Basic-example\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/ZD/Desktop/tesseract-3.04.01/samples/Basic-example/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/ZD/Desktop/samples/Basic-example/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/ZD/Desktop/tesseract-3.04.01/samples -BC:/Users/ZD/Desktop/tesseract-3.04.01/samples/build --check-stamp-file C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/Basic-example/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/ZD/Desktop/samples -BC:/Users/ZD/Desktop/samples/build --check-stamp-file C:/Users/ZD/Desktop/samples/build/Basic-example/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -301,17 +301,17 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/ZD/Desktop/tesseract-3.04.01/samples/Basic-example/CMakeLists.txt;C:\Users\ZD\Desktop\Tesseract\TesseractConfig.cmake;C:\Users\ZD\Desktop\tesseract-3.04.01\samples\Basic-example\CMakeLists.txt;C:\Users\ZD\Desktop\tesseract-3.04.01\samples\Basic-example\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\Basic-example\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/ZD/Desktop/samples/Basic-example/CMakeLists.txt;C:\Users\ZD\Desktop\Tesseract\TesseractConfig.cmake;C:\Users\ZD\Desktop\samples\Basic-example\CMakeLists.txt;C:\Users\ZD\Desktop\samples\Basic-example\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\ZD\Desktop\samples\build\Basic-example\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\ZD\Desktop\tesseract-3.04.01\samples\Basic-example\Basic-example.cpp" />
+    <ClCompile Include="C:\Users\ZD\Desktop\samples\Basic-example\Basic-example.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\ZERO_CHECK.vcxproj">
-      <Project>{ED417324-9831-381C-BD58-C565E98C7C26}</Project>
+    <ProjectReference Include="C:\Users\ZD\Desktop\samples\build\ZERO_CHECK.vcxproj">
+      <Project>{018EB4FC-DEC8-3BC3-BF43-7AE9B003B6F7}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
   </ItemGroup>

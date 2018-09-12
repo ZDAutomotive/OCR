@@ -10,8 +10,8 @@ Microsoft (R)-Buildmodul, Version 4.7.3056.0
 [Microsoft .NET Framework, Version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
 
-Der Buildvorgang wurde am 11.09.2018 14:22:33 gestartet.
-Projekt "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\3.12.2\CompilerIdC\CompilerIdC.vcxproj" auf Knoten "1" (Standardziele).
+Der Buildvorgang wurde am 2018/9/12 10:03:57 gestartet.
+Projekt "C:\Users\ZD\Desktop\samples\build\CMakeFiles\3.12.2\CompilerIdC\CompilerIdC.vcxproj" auf Knoten "1" (Standardziele).
 PrepareForBuild:
   Das Verzeichnis "Debug\" wird erstellt.
 InitializeBuildStatus:
@@ -21,28 +21,28 @@ ClCompile:
   CMakeCCompilerId.c
 Link:
   C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
-  CompilerIdC.vcxproj -> C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\3.12.2\CompilerIdC\.\CompilerIdC.exe
+  CompilerIdC.vcxproj -> C:\Users\ZD\Desktop\samples\build\CMakeFiles\3.12.2\CompilerIdC\.\CompilerIdC.exe
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
   :VCEnd
   CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\cl.exe
 FinalizeBuildStatus:
-  Die Datei "Debug\CompilerIdC.unsuccessfulbuild" wird gel�scht.
+  Die Datei "Debug\CompilerIdC.unsuccessfulbuild" wird gelöscht.
   Aktualisieren des Timestamps von "Debug\CompilerIdC.lastbuildstate".
-Die Erstellung von Projekt "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\3.12.2\CompilerIdC\CompilerIdC.vcxproj" ist abgeschlossen (Standardziele).
+Die Erstellung von Projekt "C:\Users\ZD\Desktop\samples\build\CMakeFiles\3.12.2\CompilerIdC\CompilerIdC.vcxproj" ist abgeschlossen (Standardziele).
 
-Der Buildvorgang wurde erfolgreich ausgef�hrt.
+Der Buildvorgang wurde erfolgreich ausgeführt.
     0 Warnung(en)
     0 Fehler
 
-Verstrichene Zeit 00:00:01.14
+Verstrichene Zeit 00:00:00.79
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
 
-The C compiler identification is MSVC, found in "C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/3.12.2/CompilerIdC/CompilerIdC.exe"
+The C compiler identification is MSVC, found in "C:/Users/ZD/Desktop/samples/build/CMakeFiles/3.12.2/CompilerIdC/CompilerIdC.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler:  
@@ -55,8 +55,8 @@ Microsoft (R)-Buildmodul, Version 4.7.3056.0
 [Microsoft .NET Framework, Version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
 
-Der Buildvorgang wurde am 11.09.2018 14:22:34 gestartet.
-Projekt "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\3.12.2\CompilerIdCXX\CompilerIdCXX.vcxproj" auf Knoten "1" (Standardziele).
+Der Buildvorgang wurde am 2018/9/12 10:03:59 gestartet.
+Projekt "C:\Users\ZD\Desktop\samples\build\CMakeFiles\3.12.2\CompilerIdCXX\CompilerIdCXX.vcxproj" auf Knoten "1" (Standardziele).
 PrepareForBuild:
   Das Verzeichnis "Debug\" wird erstellt.
 InitializeBuildStatus:
@@ -66,257 +66,257 @@ ClCompile:
   CMakeCXXCompilerId.cpp
 Link:
   C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
-  CompilerIdCXX.vcxproj -> C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\3.12.2\CompilerIdCXX\.\CompilerIdCXX.exe
+  CompilerIdCXX.vcxproj -> C:\Users\ZD\Desktop\samples\build\CMakeFiles\3.12.2\CompilerIdCXX\.\CompilerIdCXX.exe
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
   :VCEnd
   CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\cl.exe
 FinalizeBuildStatus:
-  Die Datei "Debug\CompilerIdCXX.unsuccessfulbuild" wird gel�scht.
+  Die Datei "Debug\CompilerIdCXX.unsuccessfulbuild" wird gelöscht.
   Aktualisieren des Timestamps von "Debug\CompilerIdCXX.lastbuildstate".
-Die Erstellung von Projekt "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\3.12.2\CompilerIdCXX\CompilerIdCXX.vcxproj" ist abgeschlossen (Standardziele).
+Die Erstellung von Projekt "C:\Users\ZD\Desktop\samples\build\CMakeFiles\3.12.2\CompilerIdCXX\CompilerIdCXX.vcxproj" ist abgeschlossen (Standardziele).
 
-Der Buildvorgang wurde erfolgreich ausgef�hrt.
+Der Buildvorgang wurde erfolgreich ausgeführt.
     0 Warnung(en)
     0 Fehler
 
-Verstrichene Zeit 00:00:00.83
+Verstrichene Zeit 00:00:00.65
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
 
-The CXX compiler identification is MSVC, found in "C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/3.12.2/CompilerIdCXX/CompilerIdCXX.exe"
+The CXX compiler identification is MSVC, found in "C:/Users/ZD/Desktop/samples/build/CMakeFiles/3.12.2/CompilerIdCXX/CompilerIdCXX.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/ZD/Desktop/samples/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_fd711.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=11.0"
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_02a68.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=11.0"
 Microsoft (R)-Buildmodul, Version 4.7.3056.0
 [Microsoft .NET Framework, Version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
 
-Der Buildvorgang wurde am 11.09.2018 14:22:36 gestartet.
-Projekt "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\cmTC_fd711.vcxproj" auf Knoten "1" (Standardziele).
+Der Buildvorgang wurde am 2018/9/12 10:04:00 gestartet.
+Projekt "C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\cmTC_02a68.vcxproj" auf Knoten "1" (Standardziele).
 PrepareForBuild:
-  Das Verzeichnis "cmTC_fd711.dir\Debug\" wird erstellt.
-  Das Verzeichnis "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
+  Das Verzeichnis "cmTC_02a68.dir\Debug\" wird erstellt.
+  Das Verzeichnis "C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
 InitializeBuildStatus:
-  "cmTC_fd711.dir\Debug\cmTC_fd711.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+  "cmTC_02a68.dir\Debug\cmTC_02a68.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_fd711.dir\Debug\\" /Fd"cmTC_fd711.dir\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\testCCompiler.c"
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_02a68.dir\Debug\\" /Fd"cmTC_02a68.dir\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:queue C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\testCCompiler.c
   Microsoft (R) C/C++ Optimizing Compiler Version 17.00.60610.1 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_fd711.dir\Debug\\" /Fd"cmTC_fd711.dir\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\testCCompiler.c"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_02a68.dir\Debug\\" /Fd"cmTC_02a68.dir\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:queue C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\testCCompiler.c
   
   testCCompiler.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_fd711.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_fd711.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_fd711.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_fd711.dir\Debug\testCCompiler.obj
-  cmTC_fd711.vcxproj -> C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_fd711.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_02a68.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ZD/Desktop/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_02a68.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ZD/Desktop/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_02a68.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_02a68.dir\Debug\testCCompiler.obj
+  cmTC_02a68.vcxproj -> C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_02a68.exe
 FinalizeBuildStatus:
-  Die Datei "cmTC_fd711.dir\Debug\cmTC_fd711.unsuccessfulbuild" wird gel”scht.
-  Aktualisieren des Timestamps von "cmTC_fd711.dir\Debug\cmTC_fd711.lastbuildstate".
-Die Erstellung von Projekt "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\cmTC_fd711.vcxproj" ist abgeschlossen (Standardziele).
+  Die Datei "cmTC_02a68.dir\Debug\cmTC_02a68.unsuccessfulbuild" wird gelöscht.
+  Aktualisieren des Timestamps von "cmTC_02a68.dir\Debug\cmTC_02a68.lastbuildstate".
+Die Erstellung von Projekt "C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\cmTC_02a68.vcxproj" ist abgeschlossen (Standardziele).
 
-Der Buildvorgang wurde erfolgreich ausgefhrt.
+Der Buildvorgang wurde erfolgreich ausgeführt.
     0 Warnung(en)
     0 Fehler
 
-Verstrichene Zeit 00:00:01.19
+Verstrichene Zeit 00:00:00.82
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/ZD/Desktop/samples/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_aa703.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=11.0"
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_88f29.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=11.0"
 Microsoft (R)-Buildmodul, Version 4.7.3056.0
 [Microsoft .NET Framework, Version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
 
-Der Buildvorgang wurde am 11.09.2018 14:22:38 gestartet.
-Projekt "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\cmTC_aa703.vcxproj" auf Knoten "1" (Standardziele).
+Der Buildvorgang wurde am 2018/9/12 10:04:01 gestartet.
+Projekt "C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\cmTC_88f29.vcxproj" auf Knoten "1" (Standardziele).
 PrepareForBuild:
-  Das Verzeichnis "cmTC_aa703.dir\Debug\" wird erstellt.
-  Das Verzeichnis "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
+  Das Verzeichnis "cmTC_88f29.dir\Debug\" wird erstellt.
+  Das Verzeichnis "C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
 InitializeBuildStatus:
-  "cmTC_aa703.dir\Debug\cmTC_aa703.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+  "cmTC_88f29.dir\Debug\cmTC_88f29.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_aa703.dir\Debug\\" /Fd"cmTC_aa703.dir\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_88f29.dir\Debug\\" /Fd"cmTC_88f29.dir\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
   Microsoft (R) C/C++ Optimizing Compiler Version 17.00.60610.1 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_aa703.dir\Debug\\" /Fd"cmTC_aa703.dir\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_88f29.dir\Debug\\" /Fd"cmTC_88f29.dir\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
   
   CMakeCCompilerABI.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_aa703.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_aa703.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_aa703.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_aa703.dir\Debug\CMakeCCompilerABI.obj
-  cmTC_aa703.vcxproj -> C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_aa703.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_88f29.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ZD/Desktop/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_88f29.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ZD/Desktop/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_88f29.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_88f29.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_88f29.vcxproj -> C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_88f29.exe
 FinalizeBuildStatus:
-  Die Datei "cmTC_aa703.dir\Debug\cmTC_aa703.unsuccessfulbuild" wird gel”scht.
-  Aktualisieren des Timestamps von "cmTC_aa703.dir\Debug\cmTC_aa703.lastbuildstate".
-Die Erstellung von Projekt "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\cmTC_aa703.vcxproj" ist abgeschlossen (Standardziele).
+  Die Datei "cmTC_88f29.dir\Debug\cmTC_88f29.unsuccessfulbuild" wird gelöscht.
+  Aktualisieren des Timestamps von "cmTC_88f29.dir\Debug\cmTC_88f29.lastbuildstate".
+Die Erstellung von Projekt "C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\cmTC_88f29.vcxproj" ist abgeschlossen (Standardziele).
 
-Der Buildvorgang wurde erfolgreich ausgefhrt.
+Der Buildvorgang wurde erfolgreich ausgeführt.
     0 Warnung(en)
     0 Fehler
 
-Verstrichene Zeit 00:00:00.76
+Verstrichene Zeit 00:00:00.72
 
 
 
 
 Detecting C [] compiler features compiled with the following output:
-Change Dir: C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/ZD/Desktop/samples/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_3192d.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=11.0"
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_8f4b2.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=11.0"
 Microsoft (R)-Buildmodul, Version 4.7.3056.0
 [Microsoft .NET Framework, Version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
 
-Der Buildvorgang wurde am 11.09.2018 14:22:39 gestartet.
-Projekt "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\cmTC_3192d.vcxproj" auf Knoten "1" (Standardziele).
+Der Buildvorgang wurde am 2018/9/12 10:04:03 gestartet.
+Projekt "C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\cmTC_8f4b2.vcxproj" auf Knoten "1" (Standardziele).
 PrepareForBuild:
-  Das Verzeichnis "cmTC_3192d.dir\Debug\" wird erstellt.
-  Das Verzeichnis "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
+  Das Verzeichnis "cmTC_8f4b2.dir\Debug\" wird erstellt.
+  Das Verzeichnis "C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
 InitializeBuildStatus:
-  "cmTC_3192d.dir\Debug\cmTC_3192d.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+  "cmTC_8f4b2.dir\Debug\cmTC_8f4b2.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_3192d.dir\Debug\\" /Fd"cmTC_3192d.dir\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\feature_tests.c"
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_8f4b2.dir\Debug\\" /Fd"cmTC_8f4b2.dir\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:queue C:\Users\ZD\Desktop\samples\build\CMakeFiles\feature_tests.c
   Microsoft (R) C/C++ Optimizing Compiler Version 17.00.60610.1 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_3192d.dir\Debug\\" /Fd"cmTC_3192d.dir\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\feature_tests.c"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_8f4b2.dir\Debug\\" /Fd"cmTC_8f4b2.dir\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:queue C:\Users\ZD\Desktop\samples\build\CMakeFiles\feature_tests.c
   
   feature_tests.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_3192d.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_3192d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_3192d.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_3192d.dir\Debug\feature_tests.obj
-  cmTC_3192d.vcxproj -> C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_3192d.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_8f4b2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ZD/Desktop/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_8f4b2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ZD/Desktop/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_8f4b2.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_8f4b2.dir\Debug\feature_tests.obj
+  cmTC_8f4b2.vcxproj -> C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_8f4b2.exe
 FinalizeBuildStatus:
-  Die Datei "cmTC_3192d.dir\Debug\cmTC_3192d.unsuccessfulbuild" wird gel”scht.
-  Aktualisieren des Timestamps von "cmTC_3192d.dir\Debug\cmTC_3192d.lastbuildstate".
-Die Erstellung von Projekt "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\cmTC_3192d.vcxproj" ist abgeschlossen (Standardziele).
+  Die Datei "cmTC_8f4b2.dir\Debug\cmTC_8f4b2.unsuccessfulbuild" wird gelöscht.
+  Aktualisieren des Timestamps von "cmTC_8f4b2.dir\Debug\cmTC_8f4b2.lastbuildstate".
+Die Erstellung von Projekt "C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\cmTC_8f4b2.vcxproj" ist abgeschlossen (Standardziele).
 
-Der Buildvorgang wurde erfolgreich ausgefhrt.
+Der Buildvorgang wurde erfolgreich ausgeführt.
     0 Warnung(en)
     0 Fehler
 
-Verstrichene Zeit 00:00:00.74
+Verstrichene Zeit 00:00:00.83
 
 
     Feature record: C_FEATURE:1c_function_prototypes
     Feature record: C_FEATURE:1c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/ZD/Desktop/samples/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_aa718.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=11.0"
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_ce45d.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=11.0"
 Microsoft (R)-Buildmodul, Version 4.7.3056.0
 [Microsoft .NET Framework, Version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
 
-Der Buildvorgang wurde am 11.09.2018 14:22:40 gestartet.
-Projekt "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\cmTC_aa718.vcxproj" auf Knoten "1" (Standardziele).
+Der Buildvorgang wurde am 2018/9/12 10:04:04 gestartet.
+Projekt "C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\cmTC_ce45d.vcxproj" auf Knoten "1" (Standardziele).
 PrepareForBuild:
-  Das Verzeichnis "cmTC_aa718.dir\Debug\" wird erstellt.
-  Das Verzeichnis "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
+  Das Verzeichnis "cmTC_ce45d.dir\Debug\" wird erstellt.
+  Das Verzeichnis "C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
 InitializeBuildStatus:
-  "cmTC_aa718.dir\Debug\cmTC_aa718.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+  "cmTC_ce45d.dir\Debug\cmTC_ce45d.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_aa718.dir\Debug\\" /Fd"cmTC_aa718.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_ce45d.dir\Debug\\" /Fd"cmTC_ce45d.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:queue C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
   Microsoft (R) C/C++ Optimizing Compiler Version 17.00.60610.1 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_aa718.dir\Debug\\" /Fd"cmTC_aa718.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_ce45d.dir\Debug\\" /Fd"cmTC_ce45d.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:queue C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
   
   testCXXCompiler.cxx
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_aa718.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_aa718.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_aa718.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_aa718.dir\Debug\testCXXCompiler.obj
-  cmTC_aa718.vcxproj -> C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_aa718.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_ce45d.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ZD/Desktop/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_ce45d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ZD/Desktop/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_ce45d.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_ce45d.dir\Debug\testCXXCompiler.obj
+  cmTC_ce45d.vcxproj -> C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_ce45d.exe
 FinalizeBuildStatus:
-  Die Datei "cmTC_aa718.dir\Debug\cmTC_aa718.unsuccessfulbuild" wird gel”scht.
-  Aktualisieren des Timestamps von "cmTC_aa718.dir\Debug\cmTC_aa718.lastbuildstate".
-Die Erstellung von Projekt "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\cmTC_aa718.vcxproj" ist abgeschlossen (Standardziele).
+  Die Datei "cmTC_ce45d.dir\Debug\cmTC_ce45d.unsuccessfulbuild" wird gelöscht.
+  Aktualisieren des Timestamps von "cmTC_ce45d.dir\Debug\cmTC_ce45d.lastbuildstate".
+Die Erstellung von Projekt "C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\cmTC_ce45d.vcxproj" ist abgeschlossen (Standardziele).
 
-Der Buildvorgang wurde erfolgreich ausgefhrt.
+Der Buildvorgang wurde erfolgreich ausgeführt.
     0 Warnung(en)
     0 Fehler
 
-Verstrichene Zeit 00:00:00.80
+Verstrichene Zeit 00:00:00.72
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/ZD/Desktop/samples/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_d7fa5.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=11.0"
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_8bb9b.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=11.0"
 Microsoft (R)-Buildmodul, Version 4.7.3056.0
 [Microsoft .NET Framework, Version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
 
-Der Buildvorgang wurde am 11.09.2018 14:22:42 gestartet.
-Projekt "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\cmTC_d7fa5.vcxproj" auf Knoten "1" (Standardziele).
+Der Buildvorgang wurde am 2018/9/12 10:04:05 gestartet.
+Projekt "C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\cmTC_8bb9b.vcxproj" auf Knoten "1" (Standardziele).
 PrepareForBuild:
-  Das Verzeichnis "cmTC_d7fa5.dir\Debug\" wird erstellt.
-  Das Verzeichnis "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
+  Das Verzeichnis "cmTC_8bb9b.dir\Debug\" wird erstellt.
+  Das Verzeichnis "C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
 InitializeBuildStatus:
-  "cmTC_d7fa5.dir\Debug\cmTC_d7fa5.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+  "cmTC_8bb9b.dir\Debug\cmTC_8bb9b.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_d7fa5.dir\Debug\\" /Fd"cmTC_d7fa5.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_8bb9b.dir\Debug\\" /Fd"cmTC_8bb9b.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
   Microsoft (R) C/C++ Optimizing Compiler Version 17.00.60610.1 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_d7fa5.dir\Debug\\" /Fd"cmTC_d7fa5.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_8bb9b.dir\Debug\\" /Fd"cmTC_8bb9b.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
   
   CMakeCXXCompilerABI.cpp
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_d7fa5.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_d7fa5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_d7fa5.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_d7fa5.dir\Debug\CMakeCXXCompilerABI.obj
-  cmTC_d7fa5.vcxproj -> C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_d7fa5.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_8bb9b.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ZD/Desktop/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_8bb9b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ZD/Desktop/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_8bb9b.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_8bb9b.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_8bb9b.vcxproj -> C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_8bb9b.exe
 FinalizeBuildStatus:
-  Die Datei "cmTC_d7fa5.dir\Debug\cmTC_d7fa5.unsuccessfulbuild" wird gel”scht.
-  Aktualisieren des Timestamps von "cmTC_d7fa5.dir\Debug\cmTC_d7fa5.lastbuildstate".
-Die Erstellung von Projekt "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\cmTC_d7fa5.vcxproj" ist abgeschlossen (Standardziele).
+  Die Datei "cmTC_8bb9b.dir\Debug\cmTC_8bb9b.unsuccessfulbuild" wird gelöscht.
+  Aktualisieren des Timestamps von "cmTC_8bb9b.dir\Debug\cmTC_8bb9b.lastbuildstate".
+Die Erstellung von Projekt "C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\cmTC_8bb9b.vcxproj" ist abgeschlossen (Standardziele).
 
-Der Buildvorgang wurde erfolgreich ausgefhrt.
+Der Buildvorgang wurde erfolgreich ausgeführt.
     0 Warnung(en)
     0 Fehler
 
-Verstrichene Zeit 00:00:00.77
+Verstrichene Zeit 00:00:00.78
 
 
 
 
 Detecting CXX [] compiler features compiled with the following output:
-Change Dir: C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/ZD/Desktop/samples/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_6b150.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=11.0"
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTC_3dc48.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=11.0"
 Microsoft (R)-Buildmodul, Version 4.7.3056.0
 [Microsoft .NET Framework, Version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
 
-Der Buildvorgang wurde am 11.09.2018 14:22:43 gestartet.
-Projekt "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\cmTC_6b150.vcxproj" auf Knoten "1" (Standardziele).
+Der Buildvorgang wurde am 2018/9/12 10:04:07 gestartet.
+Projekt "C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\cmTC_3dc48.vcxproj" auf Knoten "1" (Standardziele).
 PrepareForBuild:
-  Das Verzeichnis "cmTC_6b150.dir\Debug\" wird erstellt.
-  Das Verzeichnis "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
+  Das Verzeichnis "cmTC_3dc48.dir\Debug\" wird erstellt.
+  Das Verzeichnis "C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
 InitializeBuildStatus:
-  "cmTC_6b150.dir\Debug\cmTC_6b150.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+  "cmTC_3dc48.dir\Debug\cmTC_3dc48.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_6b150.dir\Debug\\" /Fd"cmTC_6b150.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\feature_tests.cxx"
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_3dc48.dir\Debug\\" /Fd"cmTC_3dc48.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:queue C:\Users\ZD\Desktop\samples\build\CMakeFiles\feature_tests.cxx
   Microsoft (R) C/C++ Optimizing Compiler Version 17.00.60610.1 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_6b150.dir\Debug\\" /Fd"cmTC_6b150.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\feature_tests.cxx"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_3dc48.dir\Debug\\" /Fd"cmTC_3dc48.dir\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:queue C:\Users\ZD\Desktop\samples\build\CMakeFiles\feature_tests.cxx
   
   feature_tests.cxx
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_6b150.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_6b150.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ZD/Desktop/tesseract-3.04.01/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_6b150.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_6b150.dir\Debug\feature_tests.obj
-  cmTC_6b150.vcxproj -> C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_6b150.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_3dc48.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ZD/Desktop/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_3dc48.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ZD/Desktop/samples/build/CMakeFiles/CMakeTmp/Debug/cmTC_3dc48.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_3dc48.dir\Debug\feature_tests.obj
+  cmTC_3dc48.vcxproj -> C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\Debug\cmTC_3dc48.exe
 FinalizeBuildStatus:
-  Die Datei "cmTC_6b150.dir\Debug\cmTC_6b150.unsuccessfulbuild" wird gel”scht.
-  Aktualisieren des Timestamps von "cmTC_6b150.dir\Debug\cmTC_6b150.lastbuildstate".
-Die Erstellung von Projekt "C:\Users\ZD\Desktop\tesseract-3.04.01\samples\build\CMakeFiles\CMakeTmp\cmTC_6b150.vcxproj" ist abgeschlossen (Standardziele).
+  Die Datei "cmTC_3dc48.dir\Debug\cmTC_3dc48.unsuccessfulbuild" wird gelöscht.
+  Aktualisieren des Timestamps von "cmTC_3dc48.dir\Debug\cmTC_3dc48.lastbuildstate".
+Die Erstellung von Projekt "C:\Users\ZD\Desktop\samples\build\CMakeFiles\CMakeTmp\cmTC_3dc48.vcxproj" ist abgeschlossen (Standardziele).
 
-Der Buildvorgang wurde erfolgreich ausgefhrt.
+Der Buildvorgang wurde erfolgreich ausgeführt.
     0 Warnung(en)
     0 Fehler
 

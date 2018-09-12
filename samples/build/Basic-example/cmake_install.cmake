@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ZD/Desktop/tesseract-3.04.01/samples/Basic-example
+# Install script for directory: C:/Users/ZD/Desktop/samples/Basic-example
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
